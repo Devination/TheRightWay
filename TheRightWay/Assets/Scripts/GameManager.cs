@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour {
     public Text hintText;
     public GameObject[] machines;
     hintScript hs = new hintScript();
+    public int score;
+    public Text scoreText;
 
     void Awake () {
         endText.text = "";
@@ -21,6 +23,8 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        computeScore(machines);
+        writeScore();
         if (slider.value == 1) {
             endGame();
         }
@@ -46,5 +50,20 @@ public class GameManager : MonoBehaviour {
             sb.AppendLine(s);
         }
         hintText.text = sb.ToString();
+    }
+
+    void computeScore(GameObject[] machines) {
+        int tmpScore = 0;
+        foreach(GameObject go in machines) {
+            Machine m = go.GetComponent<Machine>();
+            if(m.correctState == m.currentState) {
+                tmpScore++;
+            }
+        }
+        score = tmpScore;
+    }
+
+    void writeScore() {
+        scoreText.text = "Score: " + score;
     }
 }
