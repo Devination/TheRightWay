@@ -85,6 +85,55 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 23800000, guid: 827fda91d35f146958618d264cd77c9e, type: 2}
+--- !u!1 &710018235
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 710018237}
+  - 114: {fileID: 710018236}
+  m_Layer: 0
+  m_Name: m1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &710018236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 710018235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d112b9e8e0ef4b338331672fc95276f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  states:
+  - Hot
+  - Med
+  - Cold
+  hints:
+  - I like it hot!
+  - Meh
+  - Brr!
+  currentState: 2
+  correctState: 1
+--- !u!4 &710018237
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 710018235}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 297.94717, y: 187.65118, z: 443.9345}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
 --- !u!1001 &1020813782
 Prefab:
   m_ObjectHideFlags: 0
@@ -92,6 +141,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11451516, guid: 4cc2fefb51234844cbe09b734f6968ca, type: 2}
+      propertyPath: machines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 22456900, guid: 4cc2fefb51234844cbe09b734f6968ca, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -166,16 +219,87 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22408314, guid: 4cc2fefb51234844cbe09b734f6968ca, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22422692, guid: 4cc2fefb51234844cbe09b734f6968ca, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11481038, guid: 4cc2fefb51234844cbe09b734f6968ca, type: 2}
       propertyPath: maxTime
       value: 120
       objectReference: {fileID: 0}
+    - target: {fileID: 11451516, guid: 4cc2fefb51234844cbe09b734f6968ca, type: 2}
+      propertyPath: hintText
+      value: 
+      objectReference: {fileID: 1394430285}
+    - target: {fileID: 11451516, guid: 4cc2fefb51234844cbe09b734f6968ca, type: 2}
+      propertyPath: machines.Array.data[0]
+      value: 
+      objectReference: {fileID: 710018235}
+    - target: {fileID: 11451516, guid: 4cc2fefb51234844cbe09b734f6968ca, type: 2}
+      propertyPath: machines.Array.data[1]
+      value: 
+      objectReference: {fileID: 2011621497}
+    - target: {fileID: 22437168, guid: 4cc2fefb51234844cbe09b734f6968ca, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4cc2fefb51234844cbe09b734f6968ca, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1394430285 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11415402, guid: 4cc2fefb51234844cbe09b734f6968ca,
+    type: 2}
+  m_PrefabInternal: {fileID: 1020813782}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+--- !u!1 &2011621497
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2011621499}
+  - 114: {fileID: 2011621498}
+  m_Layer: 0
+  m_Name: m2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2011621498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2011621497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d112b9e8e0ef4b338331672fc95276f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  states:
+  - Hot2
+  - Med2
+  - Cold2
+  hints:
+  - I like it hot!2
+  - Meh2
+  - Brr!2
+  currentState: 2
+  correctState: 0
+--- !u!4 &2011621499
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2011621497}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 297.94717, y: 187.65118, z: 443.9345}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
