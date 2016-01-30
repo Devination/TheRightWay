@@ -6,13 +6,9 @@ public class GameManager : MonoBehaviour {
 
     public Text endText;
     public Slider slider;
-    public GameObject Dudebro;
-    PlayerNavigator pn;
 
     void Awake () {
         endText.text = "";
-        pn = Dudebro.GetComponent<PlayerNavigator>();
-
     }
 	// Use this for initialization
 	void Start () {
@@ -28,7 +24,8 @@ public class GameManager : MonoBehaviour {
 
     public void endGame() {
         endText.text = "Unacceptable!";
-        pn.enabled = false;
+        //this is a global
+        PlayerNavigator.i.navAgent.enabled = false;
     }
 
     void updateText() {

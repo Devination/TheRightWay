@@ -423,7 +423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0
-  maxTime: 10
+  maxTime: 5
 --- !u!222 &22202928
 CanvasRenderer:
   m_ObjectHideFlags: 1
