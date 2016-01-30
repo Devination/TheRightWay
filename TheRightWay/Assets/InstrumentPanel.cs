@@ -44,20 +44,19 @@ public class InstrumentPanel : MonoBehaviour {
 
 	public void NotifyClick( int index )
 	{
+		machine.ChangeState (index);
+
 		for (int i = 0; i < buttons.Count; i++) {
 			var butt = buttons [i];
+			var image = butt.GetComponent<Image>();
 
-			var colorBlock = butt.colors;
 
 			if (i == index) {
-				colorBlock.normalColor = selectedColor;
-				butt.colors = colorBlock;
+				image.color = selectedColor;
 
 			} else {
 
-				colorBlock.normalColor = unselectedColor;
-				butt.colors = colorBlock;
-
+				image.color = unselectedColor;
 			}	
 		}
 	}

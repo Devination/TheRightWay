@@ -5,17 +5,14 @@ public class Machine : MonoBehaviour {
 
 	public string[] states;
 	public string[] hints;
+	public string[] animatorStateNames;
 	public int currentState;
 	public int correctState;
+	public Animator animator;
 
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	public void ChangeState( int index )
+	{
+		animator.SetTrigger (animatorStateNames [index]);
 	}
 }
