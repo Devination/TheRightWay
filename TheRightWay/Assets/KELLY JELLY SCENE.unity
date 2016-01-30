@@ -471,7 +471,7 @@ Transform:
   m_LocalScale: {x: 0.02, y: 0.02, z: 0.009999998}
   m_Children: []
   m_Father: {fileID: 1239651757}
-  m_RootOrder: 4
+  m_RootOrder: 1
 --- !u!1001 &601155895
 Prefab:
   m_ObjectHideFlags: 0
@@ -1315,7 +1315,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1867257144}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Script: {fileID: 11500000, guid: 031dd0f2815e14d4c94464b235143e91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -1555,5 +1555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   machine: {fileID: 0}
-  dial: {fileID: 0}
-  buttons: []
+  dial: {fileID: 905305509}
+  buttons:
+  - {fileID: 797502365}
+  - {fileID: 1867257146}

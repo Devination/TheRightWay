@@ -11,6 +11,7 @@ public class PanelButton : Button {
 		base.OnPointerEnter (eventData);
 
 		var panel = GetComponentInParent<InstrumentPanel> ();
+
 		int index = panel.buttons.IndexOf (this);
 		panel.NotifyHighlight (index);
 	}
