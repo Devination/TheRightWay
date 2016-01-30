@@ -234,8 +234,17 @@ MonoBehaviour:
   - I like it hot!
   - Meh
   - Brr!
+  animatorStateNames:
+  - super boil
+  - boil
+  - off
+  endText:
+  - He was boilinated
+  - he was burned
+  - he was dipped in acid
   currentState: 2
   correctState: 1
+  animator: {fileID: 0}
 --- !u!4 &710018237
 Transform:
   m_ObjectHideFlags: 0
@@ -333,11 +342,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22408314, guid: 4cc2fefb51234844cbe09b734f6968ca, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22422692, guid: 4cc2fefb51234844cbe09b734f6968ca, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11481038, guid: 4cc2fefb51234844cbe09b734f6968ca, type: 2}
       propertyPath: maxTime
@@ -576,8 +585,11 @@ MonoBehaviour:
   - I like it hot!2
   - Meh2
   - Brr!2
+  animatorStateNames: []
+  endText: []
   currentState: 2
   correctState: 0
+  animator: {fileID: 0}
 --- !u!4 &2011621499
 Transform:
   m_ObjectHideFlags: 0
