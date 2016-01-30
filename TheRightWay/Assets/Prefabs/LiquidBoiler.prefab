@@ -1,5 +1,20 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &106978
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 402698}
+  m_Layer: 0
+  m_Name: PotPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &116968
 GameObject:
   m_ObjectHideFlags: 0
@@ -20,7 +35,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &133572
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -37,7 +52,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &137966
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -54,7 +69,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &151052
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -71,7 +86,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &158356
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -86,6 +101,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &402698
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106978}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.04112}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 459762}
+  m_Father: {fileID: 424842}
+  m_RootOrder: 0
 --- !u!4 &423848
 Transform:
   m_ObjectHideFlags: 1
@@ -93,10 +121,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 133572}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.0006, z: 0}
+  m_LocalPosition: {x: 0, y: -0.00059999997, z: -0.009718247}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 424842}
+  m_Father: {fileID: 459762}
   m_RootOrder: 1
 --- !u!4 &424842
 Transform:
@@ -105,13 +133,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 116968}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.22, y: 0.1, z: 7.8}
+  m_LocalPosition: {x: -5.91, y: 0.1, z: 0.56}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children:
-  - {fileID: 454984}
-  - {fileID: 423848}
-  - {fileID: 445204}
-  - {fileID: 459762}
+  - {fileID: 402698}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &445204
@@ -121,10 +146,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 137966}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.009718247}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 424842}
+  m_Father: {fileID: 459762}
   m_RootOrder: 2
 --- !u!4 &454984
 Transform:
@@ -133,10 +158,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 158356}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.0048, z: 0.03981}
+  m_LocalPosition: {x: 0, y: 0.004799998, z: 0.03009174}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 424842}
+  m_Father: {fileID: 459762}
   m_RootOrder: 0
 --- !u!4 &459762
 Transform:
@@ -145,11 +170,14 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 151052}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0.009718247}
+  m_LocalPosition: {x: 0, y: 0, z: -0.031401753}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 424842}
-  m_RootOrder: 3
+  m_Children:
+  - {fileID: 454984}
+  - {fileID: 423848}
+  - {fileID: 445204}
+  m_Father: {fileID: 402698}
+  m_RootOrder: 0
 --- !u!23 &2301042
 MeshRenderer:
   m_ObjectHideFlags: 1
