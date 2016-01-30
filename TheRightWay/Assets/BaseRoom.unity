@@ -622,7 +622,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1476237705}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e51aa96a436c4403b9113c4f9b7bfb9b, type: 3}
   m_Name: 
@@ -630,7 +630,7 @@ MonoBehaviour:
   mainCamera: {fileID: 2071959544}
   floorLayer:
     serializedVersion: 2
-    m_Bits: 800
+    m_Bits: 768
 --- !u!1 &1853510533
 GameObject:
   m_ObjectHideFlags: 0
