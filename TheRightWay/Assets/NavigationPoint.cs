@@ -3,9 +3,10 @@ using System.Collections;
 
 public class NavigationPoint : MonoBehaviour {
 
+	public GameObject navObject;
 
 	void OnMouseDown()	{
-		PlayerNavigator.SetTarget (gameObject);
+		PlayerNavigator.SetTarget (navObject);
 	}
 
 }

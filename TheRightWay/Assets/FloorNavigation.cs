@@ -5,7 +5,7 @@ public class FloorNavigation : MonoBehaviour {
 
 	public Camera mainCamera;
 	public LayerMask floorLayer;
-		
+
 	// Update is called once per frame
 	void Update () {
 	
@@ -15,7 +15,8 @@ public class FloorNavigation : MonoBehaviour {
 			RaycastHit info;
 			if (Physics.Raycast (screenRay, out info, 100, floorLayer)) 
 			{
-				PlayerNavigator.i.NavigateToPoint (info.point);
+				if( info.transform.gameObject == this.gameObject)
+					PlayerNavigator.i.NavigateToPoint (info.point);
 			}
 		}
 	}
