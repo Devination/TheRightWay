@@ -122,7 +122,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22456900, guid: 4cc2fefb51234844cbe09b734f6968ca, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22456900, guid: 4cc2fefb51234844cbe09b734f6968ca, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -172,13 +172,9 @@ Prefab:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 11451516, guid: 4cc2fefb51234844cbe09b734f6968ca, type: 2}
-      propertyPath: Dudebro
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 11481038, guid: 4cc2fefb51234844cbe09b734f6968ca, type: 2}
       propertyPath: maxTime
-      value: 5
+      value: 120
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4cc2fefb51234844cbe09b734f6968ca, type: 2}
