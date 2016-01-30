@@ -12,7 +12,7 @@ public class PlayerNavigator : MonoBehaviour {
 
 	public NavMeshAgent navAgent;
 
-	void NavigateToPoint( Vector3 targetPos )
+	public void NavigateToPoint( Vector3 targetPos )
 	{
 		navAgent.destination = targetPos;
 	}
