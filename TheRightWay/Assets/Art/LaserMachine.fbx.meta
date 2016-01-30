@@ -1,24 +1,30 @@
 fileFormatVersion: 2
-guid: c8566a39f6d2e794f8fa8c2b2cc96d52
-timeCreated: 1454134087
+guid: 53ad9a2ed0848f341a83595bd4b696ae
+timeCreated: 1454175892
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: LaserBase
-    100004: LaserHead
-    400000: //RootNode
-    400002: LaserBase
-    400004: LaserHead
-    2300000: //RootNode
-    2300002: LaserBase
-    2300004: LaserHead
-    3300000: //RootNode
-    3300002: LaserBase
-    3300004: LaserHead
-    4300000: LaserHead
-    4300002: LaserBase
+    100000: ArmLower
+    100002: ArmUpper
+    100004: Head
+    100006: //RootNode
+    400000: ArmLower
+    400002: ArmUpper
+    400004: Head
+    400006: //RootNode
+    2300000: ArmLower
+    2300002: ArmUpper
+    2300004: Head
+    2300006: //RootNode
+    3300000: ArmLower
+    3300002: ArmUpper
+    3300004: Head
+    3300006: //RootNode
+    4300000: Base
+    4300002: ArmLower
+    4300004: ArmUpper
+    4300006: Head
   materials:
     importMaterials: 1
     materialName: 0
