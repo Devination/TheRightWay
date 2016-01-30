@@ -25,3 +25,5 @@ ExportedObj/
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
 TheRightWay/Library/
+*.blend1
+*.blend2
