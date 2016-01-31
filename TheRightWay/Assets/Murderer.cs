@@ -26,18 +26,20 @@ public class Murderer : MonoBehaviour {
 
 	IEnumerator WaitToRespawn()
 	{
+		var panels = FindObjectsOfType<InstrumentPanel> ();
+		FindObjectOfType<MinionNames> ().newMinion ();
+
+		foreach ( var p in panels) {
+			p.gameObject.SetActive (false);
+		}
 		var player = FindObjectOfType<PlayerNavigator> ();
 		player.gameObject.SetActive (false);
 		yield return new WaitForSeconds (respawnTime);
 		player.gameObject.SetActive (true);
 		player.transform.position = spawnPoint.transform.position;
-		var panels = FindObjectsOfType<InstrumentPanel> ();
-		foreach ( var p in panels) {
-			p.gameObject.SetActive (false);
-		}
+	
 
 	
-		FindObjectOfType<MinionNames> ().newMinion ();
 	}
 
 	public void KillPlayer()

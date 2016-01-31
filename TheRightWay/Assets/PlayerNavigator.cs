@@ -20,6 +20,9 @@ public class PlayerNavigator : MonoBehaviour {
 
 	public void NavigateToPoint( Vector3 targetPos )
 	{
+		if (!gameObject.activeSelf)
+			return;
+
 		if (!sparkles) {
 			sparkles = Instantiate (navSparklesPrefab);	
 		}
