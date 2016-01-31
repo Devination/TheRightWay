@@ -31,6 +31,13 @@ public class Murderer : MonoBehaviour {
 		yield return new WaitForSeconds (respawnTime);
 		player.gameObject.SetActive (true);
 		player.transform.position = spawnPoint.transform.position;
+		var panels = FindObjectsOfType<InstrumentPanel> ();
+		foreach ( var p in panels) {
+			p.gameObject.SetActive (false);
+		}
+
+	
+		FindObjectOfType<MinionNames> ().newMinion ();
 	}
 
 	public void KillPlayer()
@@ -38,6 +45,9 @@ public class Murderer : MonoBehaviour {
 		var player = PlayerNavigator.i.gameObject;
 		var blood = Instantiate (splatterPrefab);
 		blood.transform.position = player.transform.position;
+		var pos = blood.transform.position;
+		pos.y = .1f;
+		blood.transform.position = pos;
 		StartCoroutine (WaitToRespawn ());
 	}
 
@@ -48,6 +58,7 @@ public class Murderer : MonoBehaviour {
 
 		var startPos = player.transform.position + Vector3.up * weightHeight;
 		var weight = Instantiate (weightPrefab);
+		weight.name = "weight";
 		weight.transform.position = startPos;
 		var deadstring = deadStrings [Random.Range (0, deadStrings.Length)];
 		BossScript.i.bossSays (deadstring);

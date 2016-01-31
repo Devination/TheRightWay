@@ -22,12 +22,15 @@ public class Weight : MonoBehaviour {
 	void OnCollisionEnter( Collision c )
 	{
 
-		if (c.gameObject == floor) {
+		if (c.gameObject == floor || c.gameObject.name == "weight" ) {
 			killing = false;
-			Destroy (projector);
+			if( projector )
+				Destroy (projector);
 		}
 
 		if (c.gameObject == PlayerNavigator.i.gameObject && killing) {
+			if( projector )
+				Destroy (projector);
 			FindObjectOfType<Murderer> ().KillPlayer ();
 		}
 
