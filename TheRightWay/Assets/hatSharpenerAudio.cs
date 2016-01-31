@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LaserAudio : MonoBehaviour {
+public class hatSharpenerAudio : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -12,12 +12,4 @@ public class LaserAudio : MonoBehaviour {
 	void Update () {
 	
 	}
-
-    public void playLaserLoop() {
-
-    }
-
-    public void playLaserStart() {
-
-    }
 }
