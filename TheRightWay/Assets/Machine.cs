@@ -142,10 +142,10 @@ public class Machine : MonoBehaviour {
 			"clippers"
 		},
 		hint = new string[] {
-			"Finally, I get to have my way with him.",
-			"Finally, I get to shut him up.",
-			"Finally, I get to watch him squirm.",
-			"Finally, I get to make him scream."
+			"Then, I'll get to have my way with him ",
+			"Then, I'll get to shut him up ",
+			"Then, I'll get to watch him squirm ",
+			"Then, I'll get to make him scream "
 
 		},
 		feedbackGood = new string[] {
@@ -175,9 +175,9 @@ public class Machine : MonoBehaviour {
 			"manatee"
 		},
 		hint = new string[] {
-			"My pet will feed.",
-			"The children will feast.",
-			"He'll die explosively."
+			"and my pet will feed.",
+			"and the children will feast.",
+			"and he'll die explosively."
 		},
 		feedbackGood = new string[] {
 			"You did something right.",
