@@ -234,9 +234,9 @@ public class Machine : MonoBehaviour {
 			"You don't know my master plan?"
 		},
 		endText = new string[] {
-			"\nWith that pesky spy out of the way, Mr. Dingleberry quickly succeeded in burning all the world's shoelaces and watching everybody fall on their faces.",
-			"\nWith that pesky spy out of the way, Mr. Dingleberry quickly succeeded in creating an insualted, viable habitat in the middle of our solar system's largest gaseous planet.",
-			"\nWith that pesky spy out of the way, Mr. Dingleberry quickly succeeded in freeing the bees to pollinate his favorite flowers."
+			"\n\nWith that pesky spy out of the way, Mr. Dingleberry quickly succeeded in burning all the world's shoelaces and watching everybody fall on their faces.",
+			"\n\nWith that pesky spy out of the way, Mr. Dingleberry quickly succeeded in creating an insualted, viable habitat in the middle of our solar system's largest gaseous planet.",
+			"\n\nWith that pesky spy out of the way, Mr. Dingleberry quickly succeeded in freeing the bees to pollinate his favorite flowers."
 		}
 	};
 	static MachineStrings Stairs = new MachineStrings {
