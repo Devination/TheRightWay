@@ -312,6 +312,7 @@ GameObject:
   - 4: {fileID: 476408}
   - 95: {fileID: 9591444}
   - 114: {fileID: 11468670}
+  - 82: {fileID: 8213232}
   m_Layer: 0
   m_Name: OperatingTable
   m_TagString: Untagged
@@ -2345,6 +2346,80 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 107854}
   m_Mesh: {fileID: 4300034, guid: e26d07177c3a54d6aa95cf0477e7977e, type: 3}
+--- !u!82 &8213232
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 145896}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 56b205a8a48b84fc4ba1352ede6139b8, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &9591444
 Animator:
   serializedVersion: 3
@@ -2373,8 +2448,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88d394b550a84b4458875a214c1cb523, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserLoop: {fileID: 0}
-  laserStart: {fileID: 0}
+  laserLoop: {fileID: 8300000, guid: 33880a0ebe7004ebca0b1f9ed5cc3b43, type: 3}
+  laserStart: {fileID: 8300000, guid: 56b205a8a48b84fc4ba1352ede6139b8, type: 3}
 --- !u!120 &12013546
 LineRenderer:
   m_ObjectHideFlags: 1
