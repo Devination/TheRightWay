@@ -586,21 +586,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d112b9e8e0ef4b338331672fc95276f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hints: []
+  feedbackGood: []
+  feedbackBad: []
+  endText: []
   states:
   - Off
   - Poisoned
   - Serrated
   - Sharpened
-  hints: []
   animatorStateNames:
   - Off
   - On
   - On
   - On
-  endText: []
   currentState: 0
   correctState: 0
   animator: {fileID: 233763974}
+  whichMachine: 0
 --- !u!4 &233763972 stripped
 Transform:
   m_PrefabParentObject: {fileID: 495260, guid: 7aeecd4823936854190808e0ee88522d, type: 2}
@@ -1326,7 +1329,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!54 &663634230
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2167,19 +2170,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d112b9e8e0ef4b338331672fc95276f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hints: []
+  feedbackGood: []
+  feedbackBad: []
+  endText: []
   states:
   - Placid
   - Bubble Bath
   - Magma
-  hints: []
   animatorStateNames:
   - Boring
   - Boiling
   - Intense
-  endText: []
   currentState: 0
   correctState: 0
   animator: {fileID: 1239651754}
+  whichMachine: 0
 --- !u!136 &1239651760
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3684,18 +3690,79 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d112b9e8e0ef4b338331672fc95276f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hints: []
+  feedbackGood: []
+  feedbackBad: []
+  endText: []
   states:
   - Blades
   - Saw
   - Laser
   - Off
-  hints: []
   animatorStateNames:
   - Blades
   - Saw
   - Laser
   - Off
-  endText: []
   currentState: 0
   correctState: 0
   animator: {fileID: 2068432425}
+  whichMachine: 0
+--- !u!1001 &2084808231
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400026, guid: b71e2adb649264590b3f97d05010be90, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 400026, guid: b71e2adb649264590b3f97d05010be90, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400026, guid: b71e2adb649264590b3f97d05010be90, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 400026, guid: b71e2adb649264590b3f97d05010be90, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400026, guid: b71e2adb649264590b3f97d05010be90, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.89010274
+      objectReference: {fileID: 0}
+    - target: {fileID: 400026, guid: b71e2adb649264590b3f97d05010be90, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400026, guid: b71e2adb649264590b3f97d05010be90, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.45576012
+      objectReference: {fileID: 0}
+    - target: {fileID: 400026, guid: b71e2adb649264590b3f97d05010be90, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400026, guid: b71e2adb649264590b3f97d05010be90, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.02118229
+      objectReference: {fileID: 0}
+    - target: {fileID: 400026, guid: b71e2adb649264590b3f97d05010be90, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.021182293
+      objectReference: {fileID: 0}
+    - target: {fileID: 400026, guid: b71e2adb649264590b3f97d05010be90, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.021182293
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: b71e2adb649264590b3f97d05010be90, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: bb04ccf470cfc44b891ec5e0316499f0, type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b71e2adb649264590b3f97d05010be90, type: 3}
+  m_IsPrefabParent: 0

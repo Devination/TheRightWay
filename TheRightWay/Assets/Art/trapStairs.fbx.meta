@@ -69,7 +69,8 @@ ModelImporter:
     4300018: polySurface2
     4300020: scaffold
     4300022: polySurface4
-    7400000: Take 001
+    7400000: Open
+    7400002: Close
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -91,7 +92,119 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Open
+      takeName: Take 001
+      firstFrame: 10
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: polySurface4
+        weight: 1
+      - path: scaffold
+        weight: 1
+      - path: step28
+        weight: 1
+      - path: step29
+        weight: 1
+      - path: step30
+        weight: 1
+      - path: step31
+        weight: 1
+      - path: step32
+        weight: 1
+      - path: step33
+        weight: 1
+      - path: step34
+        weight: 1
+      - path: step35
+        weight: 1
+      - path: step36
+        weight: 1
+      - path: trapSpikes
+        weight: 1
+      - path: trapSpikes/polySurface2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 10
+    - serializedVersion: 16
+      name: Close
+      takeName: Take 001
+      firstFrame: 10
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: polySurface4
+        weight: 1
+      - path: scaffold
+        weight: 1
+      - path: step28
+        weight: 1
+      - path: step29
+        weight: 1
+      - path: step30
+        weight: 1
+      - path: step31
+        weight: 1
+      - path: step32
+        weight: 1
+      - path: step33
+        weight: 1
+      - path: step34
+        weight: 1
+      - path: step35
+        weight: 1
+      - path: step36
+        weight: 1
+      - path: trapSpikes
+        weight: 1
+      - path: trapSpikes/polySurface2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 10
     isReadable: 1
   meshes:
     lODScreenPercentages: []
