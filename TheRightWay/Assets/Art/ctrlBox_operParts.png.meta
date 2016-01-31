@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: c6b0a5df5a2314cfc81f490518210b90
-timeCreated: 1454214964
+timeCreated: 1454266270
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -14,6 +14,7 @@ TextureImporter:
     21300014: ctrlBox_operParts_7
     21300016: ctrlBox_operParts_8
     21300018: ctrlBox_operParts_9
+    21300020: BlankButton
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -321,6 +322,30 @@ TextureImporter:
         - {x: 71.5, y: -91.5}
         - {x: 104.5, y: -42.5}
         - {x: 104.5, y: 29.5}
+    - name: BlankButton
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 38
+        width: 208
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 104, y: 47.5}
+        - {x: 70, y: 101.5}
+        - {x: 44, y: 104.5}
+        - {x: -40, y: 104.5}
+        - {x: -53, y: 95.5}
+        - {x: -83, y: 74.5}
+        - {x: -104, y: 35.5}
+        - {x: -104, y: -33.5}
+        - {x: -96, y: -61.5}
+        - {x: -46, y: -104.5}
+        - {x: 44, y: -104.5}
+        - {x: 91, y: -68.5}
+        - {x: 104, y: -35.5}
     outline: []
   spritePackingTag: 
   userData: 
