@@ -18,6 +18,7 @@ public enum WhichMachine
 
 public class Machine : MonoBehaviour {
 
+    public string[] names;
 	public string[] hints;
 	public string[] feedbackGood;
 	public string[] feedbackBad;
@@ -31,6 +32,14 @@ public class Machine : MonoBehaviour {
 
     void Awake() {
         GetStrings();
+        randoStates();
+    }
+
+    void randoStates() {
+        int max = names.Length;
+        currentState = Random.Range(0, max);
+        correctState = Random.Range(0, max);
+		animator.SetTrigger (animatorStateNames [currentState]);
     }
 
 	public void GetStrings()
@@ -57,6 +66,7 @@ public class Machine : MonoBehaviour {
 				break;
 		}
 
+        names = ms.name;
         hints = ms.hint;
         feedbackBad = ms.feedbackBad;
         feedbackGood = ms.feedbackGood;
@@ -66,6 +76,9 @@ public class Machine : MonoBehaviour {
 	public void ChangeState( int index )
 	{
 
+
+		PlayerNavigator.i.dudeAnimator.SetTrigger ("Use");
+
 		if (index == correctState) {
 
 			BossScript.i.bossSays (feedbackGood [index]);
@@ -74,6 +87,7 @@ public class Machine : MonoBehaviour {
 			BossScript.i.bossSays (feedbackBad [index]);
 		}
 			
+		currentState = index;
 		animator.SetTrigger (animatorStateNames [index]);
 	}
 

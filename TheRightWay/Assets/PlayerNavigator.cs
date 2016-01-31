@@ -1,12 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-
-
-
-
-
-
 public class PlayerNavigator : MonoBehaviour {
 
 	public static PlayerNavigator i;
@@ -14,6 +8,8 @@ public class PlayerNavigator : MonoBehaviour {
 	public float completionDistance;
 	GameObject sparkles;
 	bool oneFrameDelay = false;
+	public Animator dudeAnimator;
+
 
 	public static void SetTarget( GameObject go )
 	{
@@ -40,6 +36,8 @@ public class PlayerNavigator : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
+		dudeAnimator.SetFloat ("Speed", navAgent.velocity.magnitude);
+
 		if ( navAgent.enabled && navAgent.remainingDistance < completionDistance && sparkles && !oneFrameDelay) 
 		{
 			Destroy (sparkles);
