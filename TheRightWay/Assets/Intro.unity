@@ -683,17 +683,16 @@ GameObject:
   - 114: {fileID: 1266801618}
   - 114: {fileID: 1266801623}
   - 114: {fileID: 1266801626}
-  - 114: {fileID: 1266801620}
-  - 114: {fileID: 1266801625}
   - 114: {fileID: 1266801627}
   - 114: {fileID: 1266801631}
   - 114: {fileID: 1266801624}
-  - 114: {fileID: 1266801628}
   - 114: {fileID: 1266801622}
   - 114: {fileID: 1266801629}
+  - 114: {fileID: 1266801628}
   - 114: {fileID: 1266801630}
   - 114: {fileID: 1266801632}
-  - 114: {fileID: 1266801633}
+  - 114: {fileID: 1266801625}
+  - 114: {fileID: 1266801620}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -725,9 +724,8 @@ MonoBehaviour:
     y: -382
     width: 1224
     height: 997
-  selectedBlock: {fileID: 1266801619}
-  selectedCommands:
-  - {fileID: 1266801633}
+  selectedBlock: {fileID: 1266801626}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -785,36 +783,24 @@ MonoBehaviour:
   - {fileID: 1266801629}
   - {fileID: 1266801622}
   - {fileID: 1266801623}
-  - {fileID: 1266801628}
-  - {fileID: 1266801632}
-  - {fileID: 1266801633}
-  - {fileID: 1266801630}
+  - {fileID: 1266801620}
 --- !u!114 &1266801620
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1266801616}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 7
+  itemId: 25
   errorMessage: 
   indentLevel: 0
-  storyText: "Henchman! Herr B\xFCnd is on his way. Set up all my deadly devices exactly
-    the way I want them."
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  setSayDialog: {fileID: 0}
+  targetFlowchart: {fileID: 1266801617}
+  targetBlock: {fileID: 1266801626}
+  callMode: 0
 --- !u!4 &1266801621
 Transform:
   m_ObjectHideFlags: 0
@@ -880,29 +866,20 @@ MonoBehaviour:
   fadeTexture: {fileID: 0}
 --- !u!114 &1266801625
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1266801616}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 8
+  itemId: 24
   errorMessage: 
   indentLevel: 0
-  storyText: ' Refer to my personal musings if you get lost. Now get out of my sight.'
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  setSayDialog: {fileID: 0}
+  sceneName: KELLY JELLY SCENE
+  loadingImage: {fileID: 0}
 --- !u!114 &1266801626
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -916,8 +893,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 169
-    y: 115
+    x: 162
+    y: 125
     width: 179
     height: 40
   itemId: 6
@@ -925,7 +902,9 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 1266801620}
+  - {fileID: 1266801632}
+  - {fileID: 1266801630}
+  - {fileID: 1266801628}
   - {fileID: 1266801625}
 --- !u!114 &1266801627
 MonoBehaviour:
@@ -947,18 +926,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1266801616}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 14
+  itemId: 21
   errorMessage: 
   indentLevel: 0
-  duration: 1
-  fadeOut: 1
-  targetView: {fileID: 876531771}
-  waitUntilFinished: 1
-  fadeColor: {r: 0, g: 0, b: 0, a: 1}
-  fadeTexture: {fileID: 0}
+  storyText: You are to set up all my deadly devices {w=0.5}{b}{color=red}exactly{/color}{/b}{w=0.5}
+    the way I want them.
+  description: 
+  character: {fileID: 1398578800}
+  portrait: {fileID: 21300000, guid: fe247f5ac61810a469c34c4a63288ebe, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 1
+  fadeWhenDone: 1
+  waitForClick: 1
+  setSayDialog: {fileID: 0}
 --- !u!114 &1266801629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -987,14 +972,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1266801616}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 18
+  itemId: 22
   errorMessage: 
   indentLevel: 0
-  sceneName: KELLY JELLY SCENE
-  loadingImage: {fileID: 0}
+  storyText: "Henchman! International Ultra-spy {color=lime}Herr B\xFCnd{/color} is
+    on his way. "
+  description: 
+  character: {fileID: 1398578800}
+  portrait: {fileID: 21300000, guid: fe247f5ac61810a469c34c4a63288ebe, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  setSayDialog: {fileID: 0}
 --- !u!114 &1266801631
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1018,49 +1013,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1266801616}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 19
+  itemId: 23
   errorMessage: 
   indentLevel: 0
-  storyText: "Henchman! Herr B\xFCnd is on his way. "
-  description: 
-  character: {fileID: 1398578800}
-  portrait: {fileID: 21300000, guid: fe247f5ac61810a469c34c4a63288ebe, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  setSayDialog: {fileID: 0}
---- !u!114 &1266801633
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1266801616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 20
-  errorMessage: 
-  indentLevel: 0
-  storyText: You are to set up all my deadly devices {w=0.5}{b}{color=red}exactly{/color}{/b}{w=0.5}
-    the way I want them.
-  description: 
-  character: {fileID: 1398578800}
-  portrait: {fileID: 21300000, guid: fe247f5ac61810a469c34c4a63288ebe, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 1
-  fadeWhenDone: 1
-  waitForClick: 1
-  setSayDialog: {fileID: 0}
+  duration: 1
+  fadeOut: 1
+  targetView: {fileID: 876531771}
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
 --- !u!1 &1367387507
 GameObject:
   m_ObjectHideFlags: 0
