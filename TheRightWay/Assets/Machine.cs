@@ -100,7 +100,7 @@ public class Machine : MonoBehaviour {
 		hint = new string[] {
             "I'll start by making him glisten.",
 			"I'll start by soothing his aches.",
-            "I'll start by blowing him away."
+            "I'll start by making him violently erupt."
         },
         feedbackGood = new string[] {
             "Mwahahaha",
@@ -145,10 +145,10 @@ public class Machine : MonoBehaviour {
 			"Useless."
         },
         endText = new string[] {
-			"Herr Bünd was left whole ",
-			"Herr Bünd was flavored ",
-			"Herr Bünd was chopped into cutlets ", 
-			"Herr Bünd was sliced very thin "
+			"Herr Bünd was left whole, ",
+			"Herr Bünd was flavored, ",
+			"Herr Bünd was chopped into cutlets, ", 
+			"Herr Bünd was sliced very thin, "
         }
     };
 	static MachineStrings OperatingTable = new MachineStrings {
@@ -234,9 +234,9 @@ public class Machine : MonoBehaviour {
 			"You don't know my master plan?"
 		},
 		endText = new string[] {
-			"With that pesky spy out of the way, Mr. Dingleberry quickly succeeded in burning all the world's shoelaces and watching everybody fall on their faces.",
-			"With that pesky spy out of the way, Mr. Dingleberry quickly succeeded in creating an insualted, viable habitat in the middle of our solar system's largest gaseous planet.",
-			"With that pesky spy out of the way, Mr. Dingleberry quickly succeeded in freeing the bees to pollinate his favorite flowers."
+			"\n\nWith that pesky spy out of the way, Mr. Dingleberry quickly succeeded in burning all the world's shoelaces and watching everybody fall on their faces.",
+			"\n\nWith that pesky spy out of the way, Mr. Dingleberry quickly succeeded in creating an insualted, viable habitat in the middle of our solar system's largest gaseous planet.",
+			"\n\nWith that pesky spy out of the way, Mr. Dingleberry quickly succeeded in freeing the bees to pollinate his favorite flowers."
 		}
 	};
 	static MachineStrings Stairs = new MachineStrings {
