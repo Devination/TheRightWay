@@ -3,13 +3,22 @@ using System.Collections;
 
 public class hatSharpenerAudio : MonoBehaviour {
 
+	AudioSource _audio;
 	// Use this for initialization
-	void Start () {
-	
+	void Start()
+	{
+		_audio = this.GetComponent<AudioSource>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	public AudioClip grinderLoop;
+	public void playGrinderLoop()
+	{
+		_audio.clip = grinderLoop;
+		_audio.loop = true;
+		_audio.Play();
+	}
+	public void StopSound()
+	{
+		_audio.Stop();
 	}
 }
