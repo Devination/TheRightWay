@@ -31,6 +31,13 @@ public class Machine : MonoBehaviour {
 
     void Awake() {
         GetStrings();
+        randoStates();
+    }
+
+    void randoStates() {
+        int max = name.Length;
+        currentState = Random.Range(0, max);
+        correctState = Random.Range(0, max);
     }
 
 	public void GetStrings()
