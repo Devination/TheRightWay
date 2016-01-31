@@ -26,13 +26,15 @@ public class GameManager : MonoBehaviour {
             machines[0],
             machines[1],
             machines[2],
-            machines[3]
+            machines[3],
+            machines[4]
         };
         endMachines = new GameObject[] {
             machines[0],
             machines[1],
             machines[2],
-            machines[3]
+            machines[3],
+            machines[4]
         };
     }
 

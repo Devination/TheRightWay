@@ -9,6 +9,7 @@ public class hintScript {
         foreach (GameObject go in machines) {
             Machine m = go.GetComponent<Machine>();
             hintList[count] = m.hints[m.correctState];
+            Debug.Log("hintlist: " + m.hints[m.correctState]);
             count++;
         }
         return hintList;
