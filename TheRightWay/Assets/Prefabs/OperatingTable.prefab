@@ -1148,8 +1148,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 145896}
-  m_LocalRotation: {x: 0, y: 0.9777529, z: 0, w: 0.20975995}
-  m_LocalPosition: {x: -7.04, y: 0.07999992, z: 9.75}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.16, y: 0.1, z: 0.11}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children:
   - {fileID: 409976}
@@ -2518,7 +2518,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -2584,6 +2584,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laserLoop: {fileID: 8300000, guid: 33880a0ebe7004ebca0b1f9ed5cc3b43, type: 3}
   laserStart: {fileID: 8300000, guid: 56b205a8a48b84fc4ba1352ede6139b8, type: 3}
+  sawLoop: {fileID: 8300000, guid: b5e7005af6e79470589e0ae3b03ffd72, type: 3}
+  sawStart: {fileID: 0}
+  bladesStart: {fileID: 0}
+  bladesLoop: {fileID: 8300000, guid: b5e7005af6e79470589e0ae3b03ffd72, type: 3}
 --- !u!114 &11488282
 MonoBehaviour:
   m_ObjectHideFlags: 1

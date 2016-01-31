@@ -35,22 +35,6 @@ public class OpTableAudio : MonoBehaviour {
 		_audio.Play();
 	}
 
-	public AudioClip sawStart;
-	public void playSawStart()
-	{
-		_audio.clip = sawStart;
-		_audio.loop = false;
-		_audio.Play();
-	}
-
-	public AudioClip bladesStart;
-	public void playBladesStart()
-	{
-		_audio.clip = bladesStart;
-		_audio.loop = false;
-		_audio.Play();
-	}
-
 	public AudioClip bladesLoop;
 	public void playBladesLoop()
 	{
