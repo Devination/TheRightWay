@@ -34,8 +34,7 @@ public class BossScript : MonoBehaviour {
         foreach (GameObject go in machines) {
             Machine m = go.GetComponent<Machine>();
             string s = m.endText[m.currentState];
-            Debug.Log(s);
-            sb.AppendLine(s);
+            sb.Append(s);
         }
         return sb.ToString();
     }
