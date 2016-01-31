@@ -6,12 +6,44 @@ ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Armature
+    100004: ArmL
+    100006: ArmL_001
+    100008: ArmR
+    100010: ArmR_001
+    100012: Dude
+    100014: head
+    100016: hips
+    100018: LegL
+    100020: LegL_001
+    100022: LegR
+    100024: LegR_001
+    100026: origin
+    100028: spine
     400000: //RootNode
+    400002: Armature
+    400004: ArmL
+    400006: ArmL_001
+    400008: ArmR
+    400010: ArmR_001
+    400012: Dude
+    400014: head
+    400016: hips
+    400018: LegL
+    400020: LegL_001
+    400022: LegR
+    400024: LegR_001
+    400026: origin
+    400028: spine
     2300000: //RootNode
     3300000: //RootNode
     4300000: Dude
     7400000: Default Take
+    7400002: Walk
+    7400004: Idle
+    7400006: Use
     9500000: //RootNode
+    13700000: Dude
   materials:
     importMaterials: 1
     materialName: 0
@@ -32,7 +64,181 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Idle
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/origin
+        weight: 1
+      - path: Armature/origin/hips
+        weight: 1
+      - path: Armature/origin/hips/LegL
+        weight: 1
+      - path: Armature/origin/hips/LegL/LegL_001
+        weight: 1
+      - path: Armature/origin/hips/LegR
+        weight: 1
+      - path: Armature/origin/hips/LegR/LegR_001
+        weight: 1
+      - path: Armature/origin/hips/spine
+        weight: 1
+      - path: Armature/origin/hips/spine/ArmL
+        weight: 1
+      - path: Armature/origin/hips/spine/ArmL/ArmL_001
+        weight: 1
+      - path: Armature/origin/hips/spine/ArmR
+        weight: 1
+      - path: Armature/origin/hips/spine/ArmR/ArmR_001
+        weight: 1
+      - path: Armature/origin/hips/spine/head
+        weight: 1
+      - path: Dude
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Use
+      takeName: Use
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/origin
+        weight: 1
+      - path: Armature/origin/hips
+        weight: 1
+      - path: Armature/origin/hips/LegL
+        weight: 1
+      - path: Armature/origin/hips/LegL/LegL_001
+        weight: 1
+      - path: Armature/origin/hips/LegR
+        weight: 1
+      - path: Armature/origin/hips/LegR/LegR_001
+        weight: 1
+      - path: Armature/origin/hips/spine
+        weight: 1
+      - path: Armature/origin/hips/spine/ArmL
+        weight: 1
+      - path: Armature/origin/hips/spine/ArmL/ArmL_001
+        weight: 1
+      - path: Armature/origin/hips/spine/ArmR
+        weight: 1
+      - path: Armature/origin/hips/spine/ArmR/ArmR_001
+        weight: 1
+      - path: Armature/origin/hips/spine/head
+        weight: 1
+      - path: Dude
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk
+      takeName: Walk
+      firstFrame: -1
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/origin
+        weight: 1
+      - path: Armature/origin/hips
+        weight: 1
+      - path: Armature/origin/hips/LegL
+        weight: 1
+      - path: Armature/origin/hips/LegL/LegL_001
+        weight: 1
+      - path: Armature/origin/hips/LegR
+        weight: 1
+      - path: Armature/origin/hips/LegR/LegR_001
+        weight: 1
+      - path: Armature/origin/hips/spine
+        weight: 1
+      - path: Armature/origin/hips/spine/ArmL
+        weight: 1
+      - path: Armature/origin/hips/spine/ArmL/ArmL_001
+        weight: 1
+      - path: Armature/origin/hips/spine/ArmR
+        weight: 1
+      - path: Armature/origin/hips/spine/ArmR/ArmR_001
+        weight: 1
+      - path: Armature/origin/hips/spine/head
+        weight: 1
+      - path: Dude
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
