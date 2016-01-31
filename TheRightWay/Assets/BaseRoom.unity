@@ -85,68 +85,6 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 23800000, guid: 827fda91d35f146958618d264cd77c9e, type: 2}
---- !u!1 &103185469
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 103185471}
-  - 114: {fileID: 103185470}
-  m_Layer: 0
-  m_Name: m4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &103185470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 103185469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d112b9e8e0ef4b338331672fc95276f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  names: []
-  hints:
-  - I like it hot!
-  - Meh
-  - Brr!
-  feedbackGood: []
-  feedbackBad: []
-  endText:
-  - He was boilinated
-  - he was burned
-  - he was dipped in acid
-  states:
-  - Hot
-  - Med
-  - Cold
-  animatorStateNames:
-  - super boil
-  - boil
-  - off
-  currentState: 2
-  correctState: 1
-  animator: {fileID: 0}
-  whichMachine: 1
---- !u!4 &103185471
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 103185469}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 297.94717, y: 187.65118, z: 443.9345}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
 --- !u!1 &251773410
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,7 +226,7 @@ Transform:
   m_Children:
   - {fileID: 1866633925}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 8
 --- !u!1 &435499731
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,74 +531,12 @@ RectTransform:
   - {fileID: 2002418675}
   - {fileID: 1557365950}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 9
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &710018235
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 710018237}
-  - 114: {fileID: 710018236}
-  m_Layer: 0
-  m_Name: m1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &710018236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 710018235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d112b9e8e0ef4b338331672fc95276f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  names: []
-  hints:
-  - I like it hot!
-  - Meh
-  - Brr!
-  feedbackGood: []
-  feedbackBad: []
-  endText:
-  - He was boilinated
-  - he was burned
-  - he was dipped in acid
-  states:
-  - Hot
-  - Med
-  - Cold
-  animatorStateNames:
-  - super boil
-  - boil
-  - off
-  currentState: 2
-  correctState: 1
-  animator: {fileID: 0}
-  whichMachine: 0
---- !u!4 &710018237
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 710018235}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 297.94717, y: 187.65118, z: 443.9345}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
 --- !u!1 &733492863
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,68 +801,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
---- !u!1 &931623193
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 931623195}
-  - 114: {fileID: 931623194}
-  m_Layer: 0
-  m_Name: m5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &931623194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 931623193}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d112b9e8e0ef4b338331672fc95276f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  names: []
-  hints:
-  - I like it hot!
-  - Meh
-  - Brr!
-  feedbackGood: []
-  feedbackBad: []
-  endText:
-  - He was boilinated
-  - he was burned
-  - he was dipped in acid
-  states:
-  - Hot
-  - Med
-  - Cold
-  animatorStateNames:
-  - super boil
-  - boil
-  - off
-  currentState: 2
-  correctState: 1
-  animator: {fileID: 0}
-  whichMachine: 4
---- !u!4 &931623195
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 931623193}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 297.94717, y: 187.65118, z: 443.9345}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
 --- !u!1 &980219106
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,11 +833,11 @@ MonoBehaviour:
   slider: {fileID: 1292095043}
   hintText: {fileID: 1394430285}
   machines:
-  - {fileID: 710018235}
-  - {fileID: 2011621497}
-  - {fileID: 1907491806}
-  - {fileID: 103185469}
-  - {fileID: 931623193}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   score: 0
   scoreText: {fileID: 1557365951}
   endCanvas: {fileID: 668093269}
@@ -2088,7 +1902,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e51aa96a436c4403b9113c4f9b7bfb9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCamera: {fileID: 2071959544}
   floorLayer:
     serializedVersion: 2
     m_Bits: 768
@@ -2366,68 +2179,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &1907491806
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1907491808}
-  - 114: {fileID: 1907491807}
-  m_Layer: 0
-  m_Name: m3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1907491807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1907491806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d112b9e8e0ef4b338331672fc95276f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  names: []
-  hints:
-  - I like it hot!
-  - Meh
-  - Brr!
-  feedbackGood: []
-  feedbackBad: []
-  endText:
-  - He was boilinated
-  - he was burned
-  - he was dipped in acid
-  states:
-  - Hot
-  - Med
-  - Cold
-  animatorStateNames:
-  - super boil
-  - boil
-  - off
-  currentState: 2
-  correctState: 1
-  animator: {fileID: 0}
-  whichMachine: 3
---- !u!4 &1907491808
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1907491806}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 297.94717, y: 187.65118, z: 443.9345}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
 --- !u!1 &1993330857
 GameObject:
   m_ObjectHideFlags: 0
@@ -2621,68 +2372,6 @@ GUITexture:
   m_RightBorder: 0
   m_TopBorder: 0
   m_BottomBorder: 0
---- !u!1 &2011621497
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 2011621499}
-  - 114: {fileID: 2011621498}
-  m_Layer: 0
-  m_Name: m2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2011621498
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2011621497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d112b9e8e0ef4b338331672fc95276f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  names: []
-  hints:
-  - I like it hot!2
-  - Meh2
-  - Brr!2
-  feedbackGood: []
-  feedbackBad: []
-  endText:
-  - one
-  - two
-  - three
-  states:
-  - Hot2
-  - Med2
-  - Cold2
-  animatorStateNames:
-  - 
-  - 
-  - 
-  currentState: 2
-  correctState: 0
-  animator: {fileID: 0}
-  whichMachine: 2
---- !u!4 &2011621499
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2011621497}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 297.94717, y: 187.65118, z: 443.9345}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
 --- !u!1 &2071959540
 GameObject:
   m_ObjectHideFlags: 0

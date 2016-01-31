@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Linq;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour {
 
@@ -21,6 +23,10 @@ public class GameManager : MonoBehaviour {
     }
 
     void orderMachines () {
+
+		machines = FindObjectsOfType<Machine> ().Select( m => m.gameObject ).ToArray ();
+
+
         hintMachines = new GameObject[] {
             machines[0],
             machines[1],
@@ -39,6 +45,9 @@ public class GameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+
+
 		populateHintText(hintMachines);
 	}
 	
