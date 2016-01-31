@@ -29,7 +29,7 @@ public class BossScript : MonoBehaviour {
     public string finalSpeech(GameObject[] machines) {
         System.Text.StringBuilder sb = new System.Text.StringBuilder();
         //string[] speechArray = new string[machines.Length];
-        sb.AppendLine("End Script:");
+        sb.AppendLine("");
 
         foreach (GameObject go in machines) {
             Machine m = go.GetComponent<Machine>();
