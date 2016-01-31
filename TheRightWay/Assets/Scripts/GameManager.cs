@@ -28,20 +28,20 @@ public class GameManager : MonoBehaviour {
 
 
         hintMachines = new GameObject[] {
-            machines[5],
-            machines[0],
-            machines[3],
-            machines[4],
-            machines[1],
-            machines[2]
+            machines[4], //boiler
+            machines[5], //operating table
+            machines[2], //tank
+            machines[3], //folding stairs
+            machines[0], //hat sharpener
+            machines[1]  //desk
         };
         endMachines = new GameObject[] {
-            machines[5],
-            machines[1],
-            machines[4],
-            machines[3],
-            machines[0],
-            machines[2]
+            machines[4], //boiler
+            machines[0], //hat sharpener
+            machines[3], //stairs
+            machines[2], //tank
+            machines[5], //operating table
+            machines[1]  //desk
         };
     }
 
