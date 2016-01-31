@@ -1,6 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+
+
+
+
+
 public class PlayerNavigator : MonoBehaviour {
 
 	public static PlayerNavigator i;
@@ -34,7 +40,7 @@ public class PlayerNavigator : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-		if (navAgent.remainingDistance < completionDistance && sparkles && !oneFrameDelay) 
+		if ( navAgent.enabled && navAgent.remainingDistance < completionDistance && sparkles && !oneFrameDelay) 
 		{
 			Destroy (sparkles);
 			sparkles = null;
