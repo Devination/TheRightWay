@@ -1984,7 +1984,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: BossText
+  m_Text: Don't fail me!
 --- !u!222 &1562766387
 CanvasRenderer:
   m_ObjectHideFlags: 0
