@@ -12,4 +12,9 @@ public class BoilerAudio : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    public AudioClip lavaLoop;
+    public void playLavaLoop() {
+
+    }
 }
