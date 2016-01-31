@@ -64,13 +64,15 @@ public class GameManager : MonoBehaviour {
     void populateHintText(GameObject[] machines) {
         System.Text.StringBuilder sb = new System.Text.StringBuilder();
         string[] hintStringArray = hs.genHintList(machines);
-        sb.AppendLine("These are your hints:");
+		sb.AppendLine("Henchman! Herr Bund is on his way. Set up all my deadly devices the way I want them. Oh yes, I can see it now.\n");
 
         foreach (string s in hintStringArray) {
             Debug.Log(s);
             sb.AppendLine(s);
         }
-        hintText.text = sb.ToString();
+		sb.AppendLine("Hurry! Our guest is arriving.");
+
+		hintText.text = sb.ToString();
     }
 
     void computeScore(GameObject[] machines) {
