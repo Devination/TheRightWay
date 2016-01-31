@@ -72,7 +72,7 @@ public class GameManager : MonoBehaviour {
             Debug.Log(s);
             sb.AppendLine(s);
         }
-		sb.AppendLine("Hurry! Our guest is arriving.");
+		sb.AppendLine("/nHurry! Our guest is arriving.");
 
 		hintText.text = sb.ToString();
     }
