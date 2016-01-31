@@ -4,6 +4,7 @@ using System.Collections;
 
 public struct MachineStrings
 {
+	public string[] name;
 	public string[] hint;
 	public string[] feedbackGood;
 	public string[] feedbackBad;
@@ -12,7 +13,7 @@ public struct MachineStrings
 
 public enum WhichMachine
 {
-	Boiler, HatSharpener
+	Boiler, HatSharpener, OperatingTable, Tank, Desk
 };
 
 public class Machine : MonoBehaviour {
@@ -42,6 +43,15 @@ public class Machine : MonoBehaviour {
             case WhichMachine.HatSharpener:
                 ms = HatSharpener;
                 break;
+			case WhichMachine.OperatingTable:
+				ms = OperatingTable;
+				break;
+			case WhichMachine.Tank:
+				ms = Tank;
+				break;
+			case WhichMachine.Desk:
+				ms = Desk;
+				break;
         }
 
         hints = ms.hint;
@@ -65,48 +75,151 @@ public class Machine : MonoBehaviour {
 	}
 
     static MachineStrings boiler = new MachineStrings {
-        hint = new string[] {
-            "one",
-            "two",
-            "three"
+		name = new string[] {
+			"pond",
+			"bubble bath",
+			"magma"
+		},
+		hint = new string[] {
+            "I'll start by making him glisten.",
+			"I'll start by soothing his aches.",
+            "I'll start by blowing him away."
         },
         feedbackGood = new string[] {
-            "first",
-            "second",
-            "third"
+            "Mwahahaha",
+            "Feisty flunky!",
+            "Yesssss..."
         },
         feedbackBad = new string[] {
-            "uno",
-            "dos",
-            "trace"
+            "Sigh...",
+            "I am disappoint",
+            "You floundering fool!"
         },
         endText = new string[] {
-            "yo",
-            "dawg",
-            "man"
+            "After getting poached, ",
+            "After being simmered, ",
+            "After being boiled, ",
         }
     };
 
     static MachineStrings HatSharpener = new MachineStrings {
-        hint = new string[] {
-            "one",
-            "two",
-            "three"
+		name = new string[] {
+			"off",
+			"poisoned",
+			"serrated",
+			"sharpened"
+		},
+		hint = new string[] {
+            "You! Get me my crown!",
+            "You! Stop by the miasmic millinery.",
+            "You! Get back to the grind!",
+			"You! Help me whet my appetite for destruction, and my most favored accessory."
         },
         feedbackGood = new string[] {
-            "first",
-            "second",
-            "third"
+            "Take THAT!",
+            "You are not utterly incompetent.",
+            "A fitting ending.",
+			"Adequate."
         },
         feedbackBad = new string[] {
-            "uno",
-            "dos",
-            "trace"
+            "You imbecile!",
+            "I do not tolerate imperfection.",
+			"Pathetic.",
+			"Useless."
         },
         endText = new string[] {
-            "yo",
-            "dawg",
-            "man"
+			"Herr Bünd was left whole ",
+			"Herr Bünd was flavored ",
+			"Herr Bünd was chopped into cutlets ", 
+			"Herr Bünd was sliced very thin "
         }
     };
+	static MachineStrings OperatingTable = new MachineStrings {
+		name = new string[] {
+			"off",
+			"saw blade",
+			"laser",
+			"clippers"
+		},
+		hint = new string[] {
+			"Finally, I get to have my way with him.",
+			"Finally, I get to shut him up.",
+			"Finally, I get to watch him squirm.",
+			"Finally, I get to make him scream."
+
+		},
+		feedbackGood = new string[] {
+			"A fitting ending",
+			"Let's see how clever your schemes are now, Herr Bünd!",
+			"You sly dog!",
+			"Can't run now!"
+		},
+		feedbackBad = new string[] {
+			"Maladroit misfit!",
+			"That death is too quick.",
+			"Unacceptable",
+			"Are *you* going to carry him to the next deadly device?"
+		},
+		endText = new string[] {
+			"The Master also had some good old fashioned fun with him. ",
+			"The Master also decapitated him, just to shut him up. ",
+			"The Master also cut him in half, just for laughs. ",
+			"The Master also depoditated him, just for kicks. "
+
+		}
+	};
+	static MachineStrings Tank = new MachineStrings {
+		name = new string[] {
+			"shark",
+			"piranhas",
+			"manatee"
+		},
+		hint = new string[] {
+			"My pet will feed.",
+			"The children will feast.",
+			"He'll die explosively."
+		},
+		feedbackGood = new string[] {
+			"You did something right.",
+			"Passable.",
+			"Sufficient."
+		},
+		feedbackBad = new string[] {
+			"Wretched.",
+			"I'm growing impatient.",
+			"*Hiss*"
+		},
+		endText = new string[] {
+			"and served to Bubbles. ",
+			"and served to the school children. ",
+			"and served to Ms. Beatrice. "
+		}
+	};
+	static MachineStrings Desk = new MachineStrings {
+		name = new string[] {
+			"shoelaces",
+			"Jupiter",
+			"bees"
+		},
+		hint = new string[] {
+			"Soon, the whole world will collapse!",
+			"Soon, no man shall step foot upon my vast demesne!",
+			"Soon, humanity will swallow a bitter pill!"
+		},
+		feedbackGood = new string[] {
+			"All is not lost.",
+			"It's so big!",
+			"Fly, my pretties!"
+		},
+		feedbackBad = new string[] {
+			"You don't know my master plan?",
+			"You don't know my master plan?",
+			"You don't know my master plan?"
+		},
+		endText = new string[] {
+			"With that pesky spy out of the way, Mr. Dingleberry quickly succeeded in watching all the people of the world fall on their faces.",
+			"With that pesky spy out of the way, Mr. Dingleberry quickly succeeded in creating an insualted, viable habitat in the middle of our solar system's largest gaseous planet",
+			"With that pesky spy out of the way, Mr. Dingleberry quickly succeeded in pollinating his favorite flowers."
+		}
+	};
 }
