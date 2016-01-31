@@ -60,13 +60,14 @@ LightmapSettings:
     m_TextureHeight: 1024
     m_AOMaxDistance: 1
     m_Padding: 2
-    m_CompAOExponent: 0
+    m_CompAOExponent: 2.09
     m_LightmapParameters: {fileID: 0}
     m_TextureCompression: 1
     m_FinalGather: 0
     m_FinalGatherRayCount: 1024
     m_ReflectionCompression: 2
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000001, guid: d166c59695ec44ebcbc5f3559487f1bc,
+    type: 2}
   m_RuntimeCPUUsage: 25
 --- !u!196 &4
 NavMeshSettings:
@@ -972,10 +973,11 @@ AudioSource:
   m_GameObject: {fileID: 233763970}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24356056, guid: 0a179d49210d543bf9d1d55d17de2afc,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 5fa1b7f46c3ab440b812072b2ef0d985, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.54
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3957,6 +3959,11 @@ Prefab:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 8230864, guid: cffcd2566ba37b4468c27bec6134661a, type: 2}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24356056, guid: 0a179d49210d543bf9d1d55d17de2afc,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cffcd2566ba37b4468c27bec6134661a, type: 2}
   m_IsPrefabParent: 0
@@ -5544,11 +5551,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 68251dbef960b4db6aa04f333cfaf6dc, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 68251dbef960b4db6aa04f333cfaf6dc, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 100014, guid: 68251dbef960b4db6aa04f333cfaf6dc, type: 3}
       propertyPath: m_Layer
@@ -10176,8 +10183,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f52abe5e747ea4932bd0e635e60c41e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallSpeed: 0
   killing: 0
+  projector: {fileID: 0}
 --- !u!208 &1251104500
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -10805,7 +10812,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1373892194}
-  m_LocalRotation: {x: -0.0038225662, y: -0.69561386, z: 0.7183949, w: -0.003947751}
+  m_LocalRotation: {x: -0.003822564, y: -0.69561386, z: 0.7183949, w: -0.003947751}
   m_LocalPosition: {x: -154.4139, y: -6.7160497, z: -179.85548}
   m_LocalScale: {x: 91.86876, y: 91.868744, z: 45.934364}
   m_Children: []
@@ -16868,9 +16875,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minTime: 10
   maxTime: 20
+  respawnTime: 0
   weightHeight: 10
   weightSpeed: 10
   weightPrefab: {fileID: 0}
+  projectorPrefab: {fileID: 0}
+  splatterPrefab: {fileID: 0}
+  spawnPoint: {fileID: 0}
   deadStrings:
   - die!
   - incompetence!
@@ -18608,7 +18619,8 @@ AudioSource:
   m_GameObject: {fileID: 2068432423}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24356056, guid: 0a179d49210d543bf9d1d55d17de2afc,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 56b205a8a48b84fc4ba1352ede6139b8, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -18688,9 +18700,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laserLoop: {fileID: 8300000, guid: 33880a0ebe7004ebca0b1f9ed5cc3b43, type: 3}
   laserStart: {fileID: 8300000, guid: 56b205a8a48b84fc4ba1352ede6139b8, type: 3}
-  sawLoop: {fileID: 0}
+  sawLoop: {fileID: 8300000, guid: 42bcc235eca68a949be9c74ee5c99da0, type: 3}
   sawStart: {fileID: 0}
-  bladesStart: {fileID: 0}
+  bladesStart: {fileID: 8300000, guid: 9f8f53257d00f49488d3b6cd8811ff43, type: 3}
   bladesLoop: {fileID: 0}
 --- !u!1 &2079595187
 GameObject:
@@ -18941,39 +18953,39 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400018, guid: b71e2adb649264590b3f97d05010be90, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: b71e2adb649264590b3f97d05010be90, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: b71e2adb649264590b3f97d05010be90, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: b71e2adb649264590b3f97d05010be90, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: b71e2adb649264590b3f97d05010be90, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: b71e2adb649264590b3f97d05010be90, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: b71e2adb649264590b3f97d05010be90, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: b71e2adb649264590b3f97d05010be90, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b71e2adb649264590b3f97d05010be90, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: b71e2adb649264590b3f97d05010be90, type: 3}
       propertyPath: m_Layer

@@ -41,7 +41,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 6
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_LightmapsMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -66,7 +66,8 @@ LightmapSettings:
     m_FinalGather: 0
     m_FinalGatherRayCount: 1024
     m_ReflectionCompression: 2
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000003, guid: d166c59695ec44ebcbc5f3559487f1bc,
+    type: 2}
   m_RuntimeCPUUsage: 25
 --- !u!196 &4
 NavMeshSettings:
@@ -1784,7 +1785,29 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 139696, guid: bb5a8fc9e94c1c54fb43f020c3833b2e, type: 2}
       propertyPath: m_Name
-      value: AudioSource
+      value: musicAmbience
+      objectReference: {fileID: 0}
+    - target: {fileID: 8238624, guid: bb5a8fc9e94c1c54fb43f020c3833b2e, type: 2}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24353146, guid: 0a179d49210d543bf9d1d55d17de2afc,
+        type: 2}
+    - target: {fileID: 8230696, guid: bb5a8fc9e94c1c54fb43f020c3833b2e, type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ff9a6d704e3444decaa76054fd76517a, type: 3}
+    - target: {fileID: 8230696, guid: bb5a8fc9e94c1c54fb43f020c3833b2e, type: 2}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24372602, guid: 0a179d49210d543bf9d1d55d17de2afc,
+        type: 2}
+    - target: {fileID: 8238624, guid: bb5a8fc9e94c1c54fb43f020c3833b2e, type: 2}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230696, guid: bb5a8fc9e94c1c54fb43f020c3833b2e, type: 2}
+      propertyPath: Loop
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bb5a8fc9e94c1c54fb43f020c3833b2e, type: 2}
