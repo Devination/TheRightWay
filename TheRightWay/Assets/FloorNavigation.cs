@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.EventSystems;
+
 
 public class FloorNavigation : MonoBehaviour {
 
@@ -13,7 +15,8 @@ public class FloorNavigation : MonoBehaviour {
 		{
 			var screenRay = mainCamera.ScreenPointToRay (Input.mousePosition);
 			RaycastHit info;
-			if (Physics.Raycast (screenRay, out info, 100, floorLayer)) 
+			bool overUI = EventSystem.current.IsPointerOverGameObject ();
+			if ( !overUI && Physics.Raycast (screenRay, out info, 100, floorLayer)  ) 
 			{
 				if( info.transform.gameObject == this.gameObject)
 					PlayerNavigator.i.NavigateToPoint (info.point);
