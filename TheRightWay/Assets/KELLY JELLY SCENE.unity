@@ -18584,7 +18584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69df4c4efe64045e7a428e33224a132c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  navObject: {fileID: 0}
+  navObject: {fileID: 1471369439}
 --- !u!136 &2068432431
 CapsuleCollider:
   m_ObjectHideFlags: 0
