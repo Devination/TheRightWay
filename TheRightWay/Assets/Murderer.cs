@@ -38,12 +38,13 @@ public class Murderer : MonoBehaviour {
 		var player = PlayerNavigator.i.gameObject;
 		var blood = Instantiate (splatterPrefab);
 		blood.transform.position = player.transform.position;
+		StartCoroutine (WaitToRespawn ());
 	}
 
 
 	public void Kill()
 	{
-		var player = FindObjectOfType<PlayerNavigator> ();
+		var player = PlayerNavigator.i.gameObject;
 
 		var startPos = player.transform.position + Vector3.up * weightHeight;
 		var weight = Instantiate (weightPrefab);
