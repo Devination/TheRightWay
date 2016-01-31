@@ -76,6 +76,9 @@ public class Machine : MonoBehaviour {
 	public void ChangeState( int index )
 	{
 
+
+		PlayerNavigator.i.dudeAnimator.SetTrigger ("Use");
+
 		if (index == correctState) {
 
 			BossScript.i.bossSays (feedbackGood [index]);
@@ -84,6 +87,7 @@ public class Machine : MonoBehaviour {
 			BossScript.i.bossSays (feedbackBad [index]);
 		}
 			
+		currentState = index;
 		animator.SetTrigger (animatorStateNames [index]);
 	}
 
