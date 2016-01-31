@@ -9,7 +9,10 @@ public class Loader : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		SceneManager.LoadScene (baseScene, LoadSceneMode.Additive);
+		if (!SceneManager.GetSceneByName (baseScene).isLoaded) {
+			
+			SceneManager.LoadScene (baseScene, LoadSceneMode.Additive);
+		}
 	}
 	
 

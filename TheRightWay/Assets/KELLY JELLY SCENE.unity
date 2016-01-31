@@ -807,9 +807,9 @@ MonoBehaviour:
   - Sharpened
   animatorStateNames:
   - Off
+  - Poison
   - On
-  - On
-  - On
+  - SuperOn
   currentState: 0
   correctState: 0
   animator: {fileID: 233763974}
@@ -842,7 +842,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 233763970}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 100
   m_Height: 400
@@ -1566,7 +1566,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 495260, guid: 7aeecd4823936854190808e0ee88522d, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 495260, guid: 7aeecd4823936854190808e0ee88522d, type: 2}
       propertyPath: m_LocalScale.x
@@ -4309,7 +4309,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1373892194}
-  m_LocalRotation: {x: -0.0038225723, y: -0.6956139, z: 0.71839494, w: -0.0039477516}
+  m_LocalRotation: {x: -0.003822571, y: -0.69561386, z: 0.7183949, w: -0.003947751}
   m_LocalPosition: {x: -154.4139, y: -6.7160497, z: -179.85548}
   m_LocalScale: {x: 91.86876, y: 91.868744, z: 45.934364}
   m_Children: []
