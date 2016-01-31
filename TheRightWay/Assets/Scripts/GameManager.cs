@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour {
     public int score;
     public Text scoreText;
     BossScript bs = new BossScript();
+    public GameObject endCanvas;
 
     void Awake () {
         endText.text = "";
@@ -50,7 +51,7 @@ public class GameManager : MonoBehaviour {
 	}
 
     public void endGame() {
-        //endText.text = "Unacceptable!";
+        endCanvas.SetActive(true);
         endText.text = bs.finalSpeech(endMachines);
         //this is a global
         PlayerNavigator.i.navAgent.enabled = false;
