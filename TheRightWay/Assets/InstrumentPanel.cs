@@ -10,9 +10,6 @@ public class InstrumentPanel : MonoBehaviour {
 	public GameObject dial;
 	public List<PanelButton> buttons;
 	public float lerpTime;
-	public Color selectedColor;
-	public Color unselectedColor;
-
 
 	public void Awake()
 	{
@@ -52,11 +49,11 @@ public class InstrumentPanel : MonoBehaviour {
 
 
 			if (i == index) {
-				image.color = selectedColor;
+				butt.SetActivatedImage (true);
 
 			} else {
 
-				image.color = unselectedColor;
+				butt.SetActivatedImage (false);
 			}	
 		}
 	}
