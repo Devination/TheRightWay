@@ -11,13 +11,22 @@ public class Murderer : MonoBehaviour {
 
 	public GameObject weightPrefab;
 
-
+	public string[] deadStrings = 
+	{
+		"die!",
+		"incompetence!",
+		"you're finished!",
+	};
 
 	public void Kill()
 	{
 		var player = FindObjectOfType<PlayerNavigator> ();
 
-
+		var startPos = player.transform.position + Vector3.up * weightHeight;
+		var weight = Instantiate (weightPrefab);
+		weight.transform.position = startPos;
+		var deadstring = deadStrings [Random.Range (0, deadStrings.Length)];
+		BossScript.i.bossSays (deadstring);
 	}
 
 
