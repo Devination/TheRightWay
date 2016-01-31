@@ -8,18 +8,39 @@ public class GameManager : MonoBehaviour {
     public Slider slider;
     public Text hintText;
     public GameObject[] machines;
+    GameObject[] hintMachines;
+    GameObject[] endMachines;
     hintScript hs = new hintScript();
     public int score;
     public Text scoreText;
     BossScript bs = new BossScript();
+    public GameObject endCanvas;
 
     void Awake () {
         endText.text = "";
-       
+        orderMachines();
     }
+
+    void orderMachines () {
+        hintMachines = new GameObject[] {
+            machines[0],
+            machines[1],
+            machines[2],
+            machines[3],
+            machines[4]
+        };
+        endMachines = new GameObject[] {
+            machines[0],
+            machines[1],
+            machines[2],
+            machines[3],
+            machines[4]
+        };
+    }
+
 	// Use this for initialization
 	void Start () {
-		populateHintText(machines);
+		populateHintText(hintMachines);
 	}
 	
 	// Update is called once per frame
@@ -32,8 +53,8 @@ public class GameManager : MonoBehaviour {
 	}
 
     public void endGame() {
-        //endText.text = "Unacceptable!";
-        endText.text = bs.finalSpeech(machines);
+        endCanvas.SetActive(true);
+        endText.text = bs.finalSpeech(endMachines);
         //this is a global
         PlayerNavigator.i.navAgent.enabled = false;
     }
@@ -45,13 +66,15 @@ public class GameManager : MonoBehaviour {
     void populateHintText(GameObject[] machines) {
         System.Text.StringBuilder sb = new System.Text.StringBuilder();
         string[] hintStringArray = hs.genHintList(machines);
-        sb.AppendLine("These are your hints:");
+		sb.AppendLine("Henchman! Herr Bund is on his way. Set up all my deadly devices the way I want them. Oh yes, I can see it now.\n");
 
         foreach (string s in hintStringArray) {
             Debug.Log(s);
             sb.AppendLine(s);
         }
-        hintText.text = sb.ToString();
+		sb.AppendLine("Hurry! Our guest is arriving.");
+
+		hintText.text = sb.ToString();
     }
 
     void computeScore(GameObject[] machines) {
