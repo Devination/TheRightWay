@@ -4,12 +4,11 @@ using System.Collections;
 
 public struct MachineStrings
 {
-	string[] hint;
-	string[] feedbackGood;
-	string[] feedbackBad;
-	string[] endText;
+	public string[] hint;
+	public string[] feedbackGood;
+	public string[] feedbackBad;
+	public string[] endText;
 }
-
 
 public enum WhichMachine
 {
@@ -29,43 +28,76 @@ public class Machine : MonoBehaviour {
 	public Animator animator;
 	public WhichMachine whichMachine;
 
-	/*
-	public MachineStrings GetStrings()
+    void Awake() {
+        GetStrings();
+    }
+
+	public void GetStrings()
 	{
-		switch( whichMachine) 
-		return 
+        MachineStrings ms = new MachineStrings();
+        switch(whichMachine) {
+            case WhichMachine.Boiler:
+                ms = boiler;
+                break;
+            case WhichMachine.HatSharpener:
+                ms = HatSharpener;
+                break;
+        }
 
+        hints = ms.hint;
+        feedbackBad = ms.feedbackBad;
+        feedbackGood = ms.feedbackGood;
+        endText = ms.endText;
 	}
-	*/
-
 
 	public void ChangeState( int index )
 	{
 		animator.SetTrigger (animatorStateNames [index]);
 	}
 
+    static MachineStrings boiler = new MachineStrings {
+        hint = new string[] {
+            "one",
+            "two",
+            "three"
+        },
+        feedbackGood = new string[] {
+            "first",
+            "second",
+            "third"
+        },
+        feedbackBad = new string[] {
+            "uno",
+            "dos",
+            "trace"
+        },
+        endText = new string[] {
+            "yo",
+            "dawg",
+            "man"
+        }
+    };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-	// begin machine strings
-	/*
-	public static MachineStrings BoilerStrings
-	{
-		{  "a", "b", "c"
-
-
-	}
-		*/
-
+    static MachineStrings HatSharpener = new MachineStrings {
+        hint = new string[] {
+            "one",
+            "two",
+            "three"
+        },
+        feedbackGood = new string[] {
+            "first",
+            "second",
+            "third"
+        },
+        feedbackBad = new string[] {
+            "uno",
+            "dos",
+            "trace"
+        },
+        endText = new string[] {
+            "yo",
+            "dawg",
+            "man"
+        }
+    };
 }
