@@ -13,7 +13,7 @@ public struct MachineStrings
 
 public enum WhichMachine
 {
-	Boiler, HatSharpener, OperatingTable, Tank, Desk
+	Boiler, HatSharpener, OperatingTable, Tank, Desk, Stairs
 };
 
 public class Machine : MonoBehaviour {
@@ -52,7 +52,10 @@ public class Machine : MonoBehaviour {
 			case WhichMachine.Desk:
 				ms = Desk;
 				break;
-        }
+			case WhichMachine.Stairs:
+				ms = Stairs;
+				break;
+		}
 
         hints = ms.hint;
         feedbackBad = ms.feedbackBad;
@@ -220,6 +223,28 @@ public class Machine : MonoBehaviour {
 			"With that pesky spy out of the way, Mr. Dingleberry quickly succeeded in burning all the world's shoelaces and watching everybody fall on their faces.",
 			"With that pesky spy out of the way, Mr. Dingleberry quickly succeeded in creating an insualted, viable habitat in the middle of our solar system's largest gaseous planet.",
 			"With that pesky spy out of the way, Mr. Dingleberry quickly succeeded in freeing the bees to pollinate his favorite flowers."
+		}
+	};
+	static MachineStrings Stairs = new MachineStrings {
+		name = new string[] {
+			"normal",
+			"folded"
+		},
+		hint = new string[] {
+			"I can't wait to give him a workout.",
+			"I can't wait to show him my favorite playground attraction."
+		},
+		feedbackGood = new string[] {
+			"Climb, baby, climb!",
+			"Weeeeee!"
+		},
+		feedbackBad = new string[] {
+			"That's boring.",
+			"You're a sorry excuse for a minion."
+		},
+		endText = new string[] {
+			"toughened, ",
+			"tenderized, "
 		}
 	};
 }
