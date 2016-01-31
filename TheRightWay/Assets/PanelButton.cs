@@ -6,17 +6,34 @@ using System.Linq;
 
 public class PanelButton : Button {
 
+	public bool composite;
+
 
 	public void SetActivatedImage( bool state )
 	{
 		var icons = GetComponent<Icons> ();
-		var image = GetComponent<Image> ();
 
-		if (state) {
-			image.sprite = icons.selected;	
+
+		if (!icons.composite) {
+			
+
+			var image = GetComponent<Image> ();
+
+			if (state) {
+				image.sprite = icons.selected;	
+			} else {
+
+				image.sprite = icons.unselected;
+			}
 		} else {
+			var image = transform.FindChild ("Image").GetComponent<Image> ();
 
-			image.sprite = icons.unselected;
+			if (state) {
+				image.color = Color.red;
+			} else {
+				image.color = Color.black;
+			}
+
 		}
 	}
 

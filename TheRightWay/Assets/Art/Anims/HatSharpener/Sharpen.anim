@@ -135,7 +135,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: grindingWheel/Sparks
+    path: grindingWheel/vfx_sparks
     classID: 1
     script: {fileID: 0}
   m_PPtrCurves: []
@@ -182,7 +182,7 @@ AnimationClip:
       classID: 4
       customType: 14
       isPPtrCurve: 0
-    - path: 3628177222
+    - path: 2398263181
       attribute: 2086281974
       script: {fileID: 0}
       classID: 1
@@ -587,7 +587,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: grindingWheel/Sparks
+    path: grindingWheel/vfx_sparks
     classID: 1
     script: {fileID: 0}
   m_EulerEditorCurves:

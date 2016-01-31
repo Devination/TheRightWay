@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Linq;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour {
 
@@ -13,7 +15,6 @@ public class GameManager : MonoBehaviour {
     hintScript hs = new hintScript();
     public int score;
     public Text scoreText;
-    BossScript bs = new BossScript();
     public GameObject endCanvas;
 
     void Awake () {
@@ -22,6 +23,10 @@ public class GameManager : MonoBehaviour {
     }
 
     void orderMachines () {
+
+		machines = FindObjectsOfType<Machine> ().Select( m => m.gameObject ).ToArray ();
+
+
         hintMachines = new GameObject[] {
             machines[0],
             machines[1],
@@ -40,6 +45,9 @@ public class GameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+
+
 		populateHintText(hintMachines);
 	}
 	
@@ -54,7 +62,7 @@ public class GameManager : MonoBehaviour {
 
     public void endGame() {
         endCanvas.SetActive(true);
-        endText.text = bs.finalSpeech(endMachines);
+		endText.text = BossScript.i.finalSpeech(endMachines);
         //this is a global
         PlayerNavigator.i.navAgent.enabled = false;
     }
