@@ -342,11 +342,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22408314, guid: 4cc2fefb51234844cbe09b734f6968ca, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22422692, guid: 4cc2fefb51234844cbe09b734f6968ca, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11481038, guid: 4cc2fefb51234844cbe09b734f6968ca, type: 2}
       propertyPath: maxTime
@@ -372,6 +372,22 @@ Prefab:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 1557365951}
+    - target: {fileID: 22481804, guid: 4cc2fefb51234844cbe09b734f6968ca, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 78
+      objectReference: {fileID: 0}
+    - target: {fileID: 22481804, guid: 4cc2fefb51234844cbe09b734f6968ca, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -143
+      objectReference: {fileID: 0}
+    - target: {fileID: 11425744, guid: 4cc2fefb51234844cbe09b734f6968ca, type: 2}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11425744, guid: 4cc2fefb51234844cbe09b734f6968ca, type: 2}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4cc2fefb51234844cbe09b734f6968ca, type: 2}
   m_IsPrefabParent: 0
