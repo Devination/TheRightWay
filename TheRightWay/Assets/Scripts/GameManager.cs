@@ -13,7 +13,6 @@ public class GameManager : MonoBehaviour {
     hintScript hs = new hintScript();
     public int score;
     public Text scoreText;
-    BossScript bs = new BossScript();
     public GameObject endCanvas;
 
     void Awake () {
@@ -54,7 +53,7 @@ public class GameManager : MonoBehaviour {
 
     public void endGame() {
         endCanvas.SetActive(true);
-        endText.text = bs.finalSpeech(endMachines);
+		endText.text = BossScript.i.finalSpeech(endMachines);
         //this is a global
         PlayerNavigator.i.navAgent.enabled = false;
     }
