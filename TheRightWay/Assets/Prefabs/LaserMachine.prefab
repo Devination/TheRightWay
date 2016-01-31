@@ -11,6 +11,7 @@ GameObject:
   - 33: {fileID: 3308240}
   - 23: {fileID: 2369634}
   - 95: {fileID: 9586438}
+  - 114: {fileID: 11426180}
   m_Layer: 0
   m_Name: LaserMachine
   m_TagString: Untagged
@@ -269,6 +270,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11426180
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 101134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12d0698006607074c9a7a7aa522bbf24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserLoop: {fileID: 0}
+  laserStart: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
