@@ -3,18 +3,22 @@ using System.Collections;
 
 public class BoilerAudio : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	AudioSource _audio;
+	void Start()
+	{
+		_audio = this.GetComponent<AudioSource>();
 	}
 
-    public AudioClip lavaLoop;
+	public AudioClip lavaLoop;
     public void playLavaLoop() {
-
-    }
+		if (!_audio.isPlaying)
+		{
+			_audio.clip = lavaLoop;
+			_audio.Play();
+		}
+	}
+	public void StopSound()
+	{
+		_audio.Stop();
+	}
 }
