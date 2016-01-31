@@ -342,11 +342,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22408314, guid: 4cc2fefb51234844cbe09b734f6968ca, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22422692, guid: 4cc2fefb51234844cbe09b734f6968ca, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11481038, guid: 4cc2fefb51234844cbe09b734f6968ca, type: 2}
       propertyPath: maxTime
