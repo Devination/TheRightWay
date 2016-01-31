@@ -4537,7 +4537,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MASTER PLAN
+  m_Text: MASTER PLAN MONOLOGUE
 --- !u!222 &1514706034
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8712,7 +8712,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: UNLEASH THE BEES
+  m_Text: FREE THE BEES
 --- !u!222 &2029851648
 CanvasRenderer:
   m_ObjectHideFlags: 0
