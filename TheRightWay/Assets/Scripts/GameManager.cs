@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour {
     public Slider slider;
     public Text hintText;
     public GameObject[] machines;
+    GameObject[] hintMachines;
+    GameObject[] endMachines;
     hintScript hs = new hintScript();
     public int score;
     public Text scoreText;
@@ -15,11 +17,27 @@ public class GameManager : MonoBehaviour {
 
     void Awake () {
         endText.text = "";
-       
+        orderMachines();
     }
+
+    void orderMachines () {
+        hintMachines = new GameObject[] {
+            machines[0],
+            machines[1],
+            machines[2],
+            machines[3]
+        };
+        endMachines = new GameObject[] {
+            machines[0],
+            machines[1],
+            machines[2],
+            machines[3]
+        };
+    }
+
 	// Use this for initialization
 	void Start () {
-		populateHintText(machines);
+		populateHintText(hintMachines);
 	}
 	
 	// Update is called once per frame
@@ -33,7 +51,7 @@ public class GameManager : MonoBehaviour {
 
     public void endGame() {
         //endText.text = "Unacceptable!";
-        endText.text = bs.finalSpeech(machines);
+        endText.text = bs.finalSpeech(endMachines);
         //this is a global
         PlayerNavigator.i.navAgent.enabled = false;
     }
