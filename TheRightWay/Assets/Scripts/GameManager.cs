@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour {
     hintScript hs = new hintScript();
     public int score;
     public Text scoreText;
+    BossScript bs = new BossScript();
 
     void Awake () {
         endText.text = "";
@@ -31,7 +32,8 @@ public class GameManager : MonoBehaviour {
 	}
 
     public void endGame() {
-        endText.text = "Unacceptable!";
+        //endText.text = "Unacceptable!";
+        endText.text = bs.finalSpeech(machines);
         //this is a global
         PlayerNavigator.i.navAgent.enabled = false;
     }
@@ -66,4 +68,5 @@ public class GameManager : MonoBehaviour {
     void writeScore() {
         scoreText.text = "Score: " + score;
     }
+
 }
