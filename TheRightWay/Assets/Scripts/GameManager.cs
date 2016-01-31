@@ -28,18 +28,20 @@ public class GameManager : MonoBehaviour {
 
 
         hintMachines = new GameObject[] {
+            machines[5],
             machines[0],
-            machines[1],
-            machines[2],
             machines[3],
-            machines[4]
+            machines[4],
+            machines[1],
+            machines[2]
         };
         endMachines = new GameObject[] {
-            machines[0],
+            machines[5],
             machines[1],
-            machines[2],
+            machines[4],
             machines[3],
-            machines[4]
+            machines[0],
+            machines[2]
         };
     }
 
@@ -97,7 +99,7 @@ public class GameManager : MonoBehaviour {
     }
 
     void writeScore() {
-        scoreText.text = "Score: " + score;
+        scoreText.text = "Score: " + score + " of 6";
     }
 
 }
