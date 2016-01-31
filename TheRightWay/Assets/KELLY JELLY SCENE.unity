@@ -5621,11 +5621,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1822176184}
   m_RootOrder: 2
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9, y: -54.771347}
-  m_SizeDelta: {x: 82, y: 100}
-  m_Pivot: {x: 0.4999997, y: 0.36133686}
+  m_AnchorMin: {x: 0.50658107, y: 0.33212832}
+  m_AnchorMax: {x: 0.50658107, y: 0.33212832}
+  m_AnchoredPosition: {x: 1.3627472, y: -0.35417175}
+  m_SizeDelta: {x: 79.09, y: 96.5}
+  m_Pivot: {x: 0.51088583, y: 0.41965047}
 --- !u!114 &1634666307
 MonoBehaviour:
   m_ObjectHideFlags: 0
