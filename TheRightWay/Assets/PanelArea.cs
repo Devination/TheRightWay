@@ -5,14 +5,16 @@ public class PanelArea : MonoBehaviour {
 
 	public GameObject panel;
 
-	void OnTriggerEnter()
+	void OnTriggerEnter( Collider c )
 	{
-		panel.SetActive (true);
+		if (c.gameObject.name != "weight")
+			panel.SetActive (true);
 	}
 
 	void OnTriggerExit()
 	{
-		panel.SetActive (false);
+		if (c.gameObject.name != "weight")
+			panel.SetActive (false);
 	}
 
 }
