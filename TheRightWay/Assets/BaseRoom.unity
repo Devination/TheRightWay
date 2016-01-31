@@ -1413,7 +1413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0
-  maxTime: 3
+  maxTime: 60
 --- !u!1 &1346541231
 GameObject:
   m_ObjectHideFlags: 0

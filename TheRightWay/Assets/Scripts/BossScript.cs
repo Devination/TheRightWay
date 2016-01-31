@@ -31,11 +31,20 @@ public class BossScript : MonoBehaviour {
         //string[] speechArray = new string[machines.Length];
         sb.AppendLine("");
 
+        int scoreCheck = 0;
         foreach (GameObject go in machines) {
             Machine m = go.GetComponent<Machine>();
             string s = m.endText[m.currentState];
             sb.Append(s);
+
+            if (m.currentState == m.correctState) {
+                scoreCheck++;
+            }
         }
-        return sb.ToString();
+        if(scoreCheck == 6) {
+            return sb.ToString();
+        } else {
+            return "You fail!";
+        }
     }
 }
