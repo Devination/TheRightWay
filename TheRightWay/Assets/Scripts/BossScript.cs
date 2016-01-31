@@ -5,6 +5,12 @@ using System.Collections;
 public class BossScript : MonoBehaviour {
 
     public Text bossText;
+	public static BossScript i;
+
+	void Awake()
+	{
+		i = this;
+	}
 
 	// Use this for initialization
 	void Start () {

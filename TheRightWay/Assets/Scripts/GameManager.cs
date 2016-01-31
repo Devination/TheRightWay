@@ -15,11 +15,11 @@ public class GameManager : MonoBehaviour {
 
     void Awake () {
         endText.text = "";
-        populateHintText(machines);
+       
     }
 	// Use this for initialization
 	void Start () {
-	
+		populateHintText(machines);
 	}
 	
 	// Update is called once per frame

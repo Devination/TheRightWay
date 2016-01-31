@@ -52,6 +52,15 @@ public class Machine : MonoBehaviour {
 
 	public void ChangeState( int index )
 	{
+
+		if (index == correctState) {
+
+			BossScript.i.bossSays (feedbackGood [index]);
+		} else {
+
+			BossScript.i.bossSays (feedbackBad [index]);
+		}
+			
 		animator.SetTrigger (animatorStateNames [index]);
 	}
 
