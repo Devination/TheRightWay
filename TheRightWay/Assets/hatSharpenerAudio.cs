@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class hatSharpenerAudio : MonoBehaviour {
+public class hatSharpenerAudio : MonoBehaviour
+{
 
 	AudioSource _audio;
 	// Use this for initialization
@@ -10,11 +11,10 @@ public class hatSharpenerAudio : MonoBehaviour {
 		_audio = this.GetComponent<AudioSource>();
 	}
 
-	public AudioClip grinderLoop;
-	public void playGrinderLoop()
+	public AudioClip grinder;
+	public void playGrinder()
 	{
-		_audio.clip = grinderLoop;
-		_audio.loop = false;
+		_audio.clip = grinder;
 		_audio.Play();
 	}
 	public void StopSound()
