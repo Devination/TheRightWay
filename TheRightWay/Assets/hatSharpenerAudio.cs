@@ -14,7 +14,7 @@ public class hatSharpenerAudio : MonoBehaviour {
 	public void playGrinderLoop()
 	{
 		_audio.clip = grinderLoop;
-		_audio.loop = true;
+		_audio.loop = false;
 		_audio.Play();
 	}
 	public void StopSound()
