@@ -100,7 +100,7 @@ public class Machine : MonoBehaviour {
 		hint = new string[] {
             "I'll start by making him glisten.",
 			"I'll start by soothing his aches.",
-            "I'll start by blowing him away."
+            "I'll start by making him violently erupt."
         },
         feedbackGood = new string[] {
             "Mwahahaha",
