@@ -15,7 +15,7 @@ GameObject:
   - 208: {fileID: 20807130}
   - 114: {fileID: 11414342}
   m_Layer: 0
-  m_Name: hundredTonWeight
+  m_Name: weight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
