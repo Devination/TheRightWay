@@ -18,6 +18,7 @@ public enum WhichMachine
 
 public class Machine : MonoBehaviour {
 
+    public string[] names;
 	public string[] hints;
 	public string[] feedbackGood;
 	public string[] feedbackBad;
@@ -35,9 +36,10 @@ public class Machine : MonoBehaviour {
     }
 
     void randoStates() {
-        int max = name.Length;
+        int max = names.Length;
         currentState = Random.Range(0, max);
         correctState = Random.Range(0, max);
+		animator.SetTrigger (animatorStateNames [currentState]);
     }
 
 	public void GetStrings()
@@ -64,6 +66,7 @@ public class Machine : MonoBehaviour {
 				break;
 		}
 
+        names = ms.name;
         hints = ms.hint;
         feedbackBad = ms.feedbackBad;
         feedbackGood = ms.feedbackGood;

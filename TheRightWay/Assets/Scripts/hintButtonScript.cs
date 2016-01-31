@@ -31,9 +31,6 @@ public class hintButtonScript : MonoBehaviour {
     void blink() {
         if (blinking) {
             scale = 1 + Mathf.Sin(Time.time * blinkSpeed) * blinkAmplitude;
-            Debug.Log(Time.time);
-            Debug.Log(Mathf.Sin(Time.time));
-            Debug.Log(scale);
         } else {
             scale = 1;
         }
