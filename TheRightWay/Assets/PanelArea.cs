@@ -11,7 +11,7 @@ public class PanelArea : MonoBehaviour {
 			panel.SetActive (true);
 	}
 
-	void OnTriggerExit()
+	void OnTriggerExit( Collider c )
 	{
 		if (c.gameObject.name != "weight")
 			panel.SetActive (false);
