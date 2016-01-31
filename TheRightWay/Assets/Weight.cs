@@ -3,31 +3,32 @@ using System.Collections;
 
 public class Weight : MonoBehaviour {
 
-	public float fallSpeed;
 	public bool killing;
+	public GameObject projector;
+
+	GameObject floor;
 
 	// Use this for initialization
 	void Start () {
 	
+		floor = FindObjectOfType<FloorNavigation> ().gameObject;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		if( killing )
-			transform.position = transform.position + Vector3.down * fallSpeed * Time.deltaTime;
-
-
 	}
 
 	void OnCollisionEnter( Collision c )
 	{
-		if (c.gameObject.layer == 1 << LayerMask.NameToLayer ("Floor")) {
 
+		if (c.gameObject == floor) {
 			killing = false;
+			Destroy (projector);
+		}
 
-		} else if (c.gameObject == PlayerNavigator.i.gameObject) {
-			// kill
+		if (c.gameObject == PlayerNavigator.i.gameObject && killing) {
+			FindObjectOfType<Murderer> ().KillPlayer ();
 		}
 
 	}
