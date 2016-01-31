@@ -825,7 +825,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!114 &980219109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1786,6 +1786,14 @@ Prefab:
       propertyPath: m_Name
       value: AudioSource
       objectReference: {fileID: 0}
+    - target: {fileID: 8230696, guid: bb5a8fc9e94c1c54fb43f020c3833b2e, type: 2}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8238624, guid: bb5a8fc9e94c1c54fb43f020c3833b2e, type: 2}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bb5a8fc9e94c1c54fb43f020c3833b2e, type: 2}
   m_IsPrefabParent: 0
@@ -2049,7 +2057,7 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Don't fail me!

@@ -1,0 +1,329 @@
+fileFormatVersion: 2
+guid: 3c06f074426964ac397bb9a3fca88577
+timeCreated: 1454274295
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: group4
+    100002: hand
+    100004: hand 1
+    100006: head
+    100008: ikHandleLf
+    100010: ikHandleRt
+    100012: joint11
+    100014: joint12
+    100016: joint13
+    100018: joint14
+    100020: joint15
+    100022: joint16
+    100024: joint18
+    100026: joint2
+    100028: joint4
+    100030: joint5
+    100032: joint6
+    100034: joint7
+    100036: joint8
+    100038: joint9
+    100040: sf_armLf
+    100042: sf_armRt
+    100044: sf_body
+    100046: sf_head
+    100048: sf_hips
+    100050: shoulderLf
+    100052: shoulderRt
+    100054: silverFang
+    100056: //RootNode
+    100058: mesh
+    400000: group4
+    400002: hand
+    400004: hand 1
+    400006: head
+    400008: ikHandleLf
+    400010: ikHandleRt
+    400012: joint11
+    400014: joint12
+    400016: joint13
+    400018: joint14
+    400020: joint15
+    400022: joint16
+    400024: joint18
+    400026: joint2
+    400028: joint4
+    400030: joint5
+    400032: joint6
+    400034: joint7
+    400036: joint8
+    400038: joint9
+    400040: sf_armLf
+    400042: sf_armRt
+    400044: sf_body
+    400046: sf_head
+    400048: sf_hips
+    400050: shoulderLf
+    400052: shoulderRt
+    400054: silverFang
+    400056: //RootNode
+    400058: mesh
+    2300000: sf_body
+    2300002: sf_head
+    2300004: hand
+    2300006: hand 1
+    2300008: sf_armLf
+    2300010: sf_armRt
+    3300000: sf_body
+    3300002: sf_head
+    3300004: hand
+    3300006: hand 1
+    3300008: sf_armLf
+    3300010: sf_armRt
+    4300000: sf_armLf
+    4300002: hand
+    4300004: sf_armRt
+    4300006: hand
+    4300008: sf_body
+    4300010: sf_head
+    7400000: idle
+    7400002: yell
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: hand
+    13700002: hand 1
+    13700004: sf_armLf
+    13700006: sf_armRt
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: silverFang
+        weight: 1
+      - path: silverFang/group4
+        weight: 1
+      - path: silverFang/group4/sf_armLf
+        weight: 1
+      - path: silverFang/group4/sf_armLf/hand
+        weight: 1
+      - path: silverFang/group4/sf_armRt
+        weight: 1
+      - path: silverFang/group4/sf_armRt/hand 1
+        weight: 1
+      - path: silverFang/sf_hips
+        weight: 1
+      - path: silverFang/sf_hips/head
+        weight: 1
+      - path: silverFang/sf_hips/head/joint18
+        weight: 1
+      - path: silverFang/sf_hips/head/sf_head
+        weight: 1
+      - path: silverFang/sf_hips/ikHandleLf
+        weight: 1
+      - path: silverFang/sf_hips/ikHandleRt
+        weight: 1
+      - path: silverFang/sf_hips/joint2
+        weight: 1
+      - path: silverFang/sf_hips/joint2/shoulderLf
+        weight: 1
+      - path: silverFang/sf_hips/joint2/shoulderLf/joint4
+        weight: 1
+      - path: silverFang/sf_hips/joint2/shoulderLf/joint4/joint5
+        weight: 1
+      - path: silverFang/sf_hips/joint2/shoulderLf/joint4/joint5/joint6
+        weight: 1
+      - path: silverFang/sf_hips/joint2/shoulderLf/joint4/joint5/joint6/joint7
+        weight: 1
+      - path: silverFang/sf_hips/joint2/shoulderLf/joint4/joint5/joint6/joint7/joint8
+        weight: 1
+      - path: silverFang/sf_hips/joint2/shoulderLf/joint4/joint5/joint6/joint7/joint8/joint9
+        weight: 1
+      - path: silverFang/sf_hips/joint2/shoulderRt
+        weight: 1
+      - path: silverFang/sf_hips/joint2/shoulderRt/joint11
+        weight: 1
+      - path: silverFang/sf_hips/joint2/shoulderRt/joint11/joint12
+        weight: 1
+      - path: silverFang/sf_hips/joint2/shoulderRt/joint11/joint12/joint13
+        weight: 1
+      - path: silverFang/sf_hips/joint2/shoulderRt/joint11/joint12/joint13/joint14
+        weight: 1
+      - path: silverFang/sf_hips/joint2/shoulderRt/joint11/joint12/joint13/joint14/joint15
+        weight: 1
+      - path: silverFang/sf_hips/joint2/shoulderRt/joint11/joint12/joint13/joint14/joint15/joint16
+        weight: 1
+      - path: silverFang/sf_hips/sf_body
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.96
+    - serializedVersion: 16
+      name: yell
+      takeName: Take 001
+      firstFrame: 30
+      lastFrame: 46
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: silverFang
+        weight: 1
+      - path: silverFang/group4
+        weight: 1
+      - path: silverFang/group4/sf_armLf
+        weight: 1
+      - path: silverFang/group4/sf_armLf/hand
+        weight: 1
+      - path: silverFang/group4/sf_armRt
+        weight: 1
+      - path: silverFang/group4/sf_armRt/hand 1
+        weight: 1
+      - path: silverFang/sf_hips
+        weight: 1
+      - path: silverFang/sf_hips/head
+        weight: 1
+      - path: silverFang/sf_hips/head/joint18
+        weight: 1
+      - path: silverFang/sf_hips/head/sf_head
+        weight: 1
+      - path: silverFang/sf_hips/ikHandleLf
+        weight: 1
+      - path: silverFang/sf_hips/ikHandleRt
+        weight: 1
+      - path: silverFang/sf_hips/joint2
+        weight: 1
+      - path: silverFang/sf_hips/joint2/shoulderLf
+        weight: 1
+      - path: silverFang/sf_hips/joint2/shoulderLf/joint4
+        weight: 1
+      - path: silverFang/sf_hips/joint2/shoulderLf/joint4/joint5
+        weight: 1
+      - path: silverFang/sf_hips/joint2/shoulderLf/joint4/joint5/joint6
+        weight: 1
+      - path: silverFang/sf_hips/joint2/shoulderLf/joint4/joint5/joint6/joint7
+        weight: 1
+      - path: silverFang/sf_hips/joint2/shoulderLf/joint4/joint5/joint6/joint7/joint8
+        weight: 1
+      - path: silverFang/sf_hips/joint2/shoulderLf/joint4/joint5/joint6/joint7/joint8/joint9
+        weight: 1
+      - path: silverFang/sf_hips/joint2/shoulderRt
+        weight: 1
+      - path: silverFang/sf_hips/joint2/shoulderRt/joint11
+        weight: 1
+      - path: silverFang/sf_hips/joint2/shoulderRt/joint11/joint12
+        weight: 1
+      - path: silverFang/sf_hips/joint2/shoulderRt/joint11/joint12/joint13
+        weight: 1
+      - path: silverFang/sf_hips/joint2/shoulderRt/joint11/joint12/joint13/joint14
+        weight: 1
+      - path: silverFang/sf_hips/joint2/shoulderRt/joint11/joint12/joint13/joint14/joint15
+        weight: 1
+      - path: silverFang/sf_hips/joint2/shoulderRt/joint11/joint12/joint13/joint14/joint15/joint16
+        weight: 1
+      - path: silverFang/sf_hips/sf_body
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.96
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: sf_hips
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
