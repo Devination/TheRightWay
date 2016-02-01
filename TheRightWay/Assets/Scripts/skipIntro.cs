@@ -9,7 +9,7 @@ public class skipIntro : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.G))
         {
-            SceneManager.LoadScene("KELLY JELLY SCENE");
+            SceneManager.LoadScene("Cool scene that works");
         }
     }
 }
