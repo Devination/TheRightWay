@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour {
         endCanvas.SetActive(true);
 		endText.text = BossScript.i.finalSpeech(endMachines);
         //this is a global
-        PlayerNavigator.i.navAgent.enabled = false;
+        //PlayerNavigator.i.navAgent.enabled = false;
     }
 
     void updateText() {
