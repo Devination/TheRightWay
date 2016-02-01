@@ -725,7 +725,8 @@ MonoBehaviour:
     width: 1224
     height: 997
   selectedBlock: {fileID: 1266801626}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1266801625}
   variables: []
   description: 
   stepPause: 0
@@ -878,7 +879,7 @@ MonoBehaviour:
   itemId: 24
   errorMessage: 
   indentLevel: 0
-  sceneName: KELLY JELLY SCENE
+  sceneName: Cool scene that works
   loadingImage: {fileID: 0}
 --- !u!114 &1266801626
 MonoBehaviour:
@@ -1468,7 +1469,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22434976, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22461148, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_RootOrder
