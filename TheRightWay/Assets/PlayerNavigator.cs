@@ -9,6 +9,7 @@ public class PlayerNavigator : MonoBehaviour {
 	GameObject sparkles;
 	bool oneFrameDelay = false;
 	public Animator dudeAnimator;
+	public bool off;
 
 
 	public static void SetTarget( GameObject go )
@@ -20,7 +21,7 @@ public class PlayerNavigator : MonoBehaviour {
 
 	public void NavigateToPoint( Vector3 targetPos )
 	{
-		if (!gameObject.activeSelf)
+		if ( off )
 			return;
 
 		if (!sparkles) {

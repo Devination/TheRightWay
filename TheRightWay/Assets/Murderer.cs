@@ -15,12 +15,21 @@ public class Murderer : MonoBehaviour {
 	public GameObject projectorPrefab;
 	public GameObject splatterPrefab;
 	public GameObject spawnPoint;
+	public GameObject walkPoint;
 
 	public string[] deadStrings = 
 	{
-		"die!",
-		"incompetence!",
-		"you're finished!",
+		"Goodbye.",
+		"You've worn out your welcome.",
+		"It's Mr. Dingleberry's feeding time.",
+		"Next!",
+		"Ta ta!",
+		"Enough!",
+		"What is that large object that was just released above your head?",
+		"To think, I thought you might succeed.",
+		"No more!",
+		"It's been a while since I've squished anybody.",
+		"Jeeves! Get me some tea and clean up this mess.",
 	};
 
 
@@ -28,18 +37,15 @@ public class Murderer : MonoBehaviour {
 	{
 		var panels = FindObjectsOfType<InstrumentPanel> ();
 		FindObjectOfType<MinionNames> ().newMinion ();
-
 		foreach ( var p in panels) {
 			p.gameObject.SetActive (false);
 		}
 		var player = FindObjectOfType<PlayerNavigator> ();
-		player.gameObject.SetActive (false);
-		yield return new WaitForSeconds (respawnTime);
-		player.gameObject.SetActive (true);
 		player.transform.position = spawnPoint.transform.position;
-	
-
-	
+		player.navAgent.SetDestination (walkPoint.transform.position );
+		player.off = true;
+		yield return new WaitForSeconds (respawnTime);
+		player.off = false;
 	}
 
 	public void KillPlayer()
