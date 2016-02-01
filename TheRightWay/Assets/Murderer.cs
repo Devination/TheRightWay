@@ -17,7 +17,7 @@ public class Murderer : MonoBehaviour {
 	public GameObject spawnPoint;
 	public GameObject walkPoint;
 
-	public string[] deadStrings = 
+	public static string[] deadStrings = 
 	{
 		"Goodbye.",
 		"You've worn out your welcome.",
